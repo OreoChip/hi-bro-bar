@@ -26,7 +26,7 @@ class Navigation extends React.Component {
           <List className={classes.list}>
             <ListItem className={classes.listItem}>
               <Button
-                href="home"
+                href=""
                 className={classes.navLink}
                 // onClick={e => e.preventDefault()}
                 color="transparent"
@@ -36,7 +36,7 @@ class Navigation extends React.Component {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="cakes"
+                href=""
                 className={classes.navLink}
                 // onClick={e => e.preventDefault()}
                 color="transparent"
@@ -46,7 +46,7 @@ class Navigation extends React.Component {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="link1"
+                href=""
                 className={classes.navLink}
                 // onClick={e => e.preventDefault()}
                 color="transparent"
@@ -56,7 +56,7 @@ class Navigation extends React.Component {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="link1"
+                href=""
                 className={classes.navLink}
                 // onClick={e => e.preventDefault()}
                 color="transparent"
@@ -66,7 +66,7 @@ class Navigation extends React.Component {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="link1"
+                href=""
                 className={classes.navLink}
                 // onClick={e => e.preventDefault()}
                 color="transparent"
