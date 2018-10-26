@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -8,13 +8,13 @@ import navbarsStyle from 'design-system/assets/jss/material-kit-react/views/comp
 
 const navOptions = [
   { text: 'Home' },
-  { text: 'About Us' },
   { text: 'Services' },
-  { text: 'Prices' },
+  { text: 'Special' },
+  { text: 'Careers' },
   { text: 'Contact' }
 ];
 
-class Navigation extends React.Component {
+class Navigation extends Component {
   static propTypes = {};
 
   renderButton = (option, idx) => {
