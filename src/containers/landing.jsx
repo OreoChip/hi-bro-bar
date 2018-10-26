@@ -8,6 +8,7 @@ import image2 from 'assets/image3.jpg';
 import { container } from 'design-system/assets/jss/material-kit-react.jsx';
 import MastHead from 'components/masthead';
 import Services from 'components/services';
+import Careers from 'components/careers';
 
 const styles = () => ({
   slick1: {
@@ -110,12 +111,27 @@ const styles = () => ({
   },
   serviceImage: {
     height: 200
+  },
+  careers: {
+    boxShadow: 'none',
+    marginTop: 70
+  },
   sectionHeading: {
     fontSize: 40,
     color: 'gray',
     textAlign: 'center',
     marginBottom: 60
   },
+  careerDesc: {
+    fontSize: 16,
+    marginBottom: 20
+  },
+  careersHeading: {
+    fontWeight: 'bold',
+    marginBottom: 10
+  },
+  careersText: {
+    marginBottom: 20
   }
 });
 
@@ -165,6 +181,7 @@ class Landing extends Component {
         </div>
         <MastHead classes={classes} />
         <Services classes={classes} />
+        <Careers classes={classes} />
       </div>
     );
   }
