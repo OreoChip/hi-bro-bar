@@ -7,6 +7,7 @@ import image1 from 'assets/image2.jpg';
 import image2 from 'assets/image3.jpg';
 import { container } from 'design-system/assets/jss/material-kit-react.jsx';
 import MastHead from 'components/masthead';
+import Services from 'components/services';
 
 const styles = () => ({
   slick1: {
@@ -61,6 +62,12 @@ const styles = () => ({
     boxSizing: 'border-box',
     textAlign: 'center'
   },
+  cardServices: {
+    width: '33%',
+    margin: 20,
+    boxSizing: 'border-box',
+    textAlign: 'center'
+  },
   cardsContainer: {
     display: 'flex',
     flexDirection: 'row'
@@ -96,6 +103,19 @@ const styles = () => ({
     marginTop: 0,
     textTransform: 'uppercase',
     fontSize: 35
+  },
+  services: {
+    marginTop: 80,
+    boxShadow: 'none'
+  },
+  serviceImage: {
+    height: 200
+  sectionHeading: {
+    fontSize: 40,
+    color: 'gray',
+    textAlign: 'center',
+    marginBottom: 60
+  },
   }
 });
 
@@ -144,6 +164,7 @@ class Landing extends Component {
           </div>
         </div>
         <MastHead classes={classes} />
+        <Services classes={classes} />
       </div>
     );
   }
