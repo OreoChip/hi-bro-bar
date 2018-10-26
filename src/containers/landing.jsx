@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
-// nodejs library that concatenates classes
-// @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles';
 import classNames from 'classnames';
 
-// @material-ui/icons
-
-// core components
 import Slider from 'react-slick';
 import image from 'assets/parallax.jpg'
 import image1 from 'assets/image2.jpg'
 import image2 from 'assets/image3.jpg'
 import { container } from 'design-system/assets/jss/material-kit-react.jsx';
 
-import PropTypes from 'prop-types';
 import Card from '@material-ui/core/Card';
 import Divider from '@material-ui/core/Divider';
 import CardActionArea from '@material-ui/core/CardActionArea';
