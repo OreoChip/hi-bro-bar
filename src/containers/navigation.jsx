@@ -3,6 +3,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Header from 'design-system/components/Header/Header.jsx';
+import CustomDropdown from 'design-system/components/CustomDropdown/CustomDropdown.jsx';
 import Button from 'design-system/components/CustomButtons/Button.jsx';
 import navbarsStyle from 'design-system/assets/jss/material-kit-react/views/componentsSections/navbarsStyle.jsx';
 
@@ -35,7 +36,17 @@ class Navigation extends React.Component {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="services"
+                href=""
+                className={classes.navLink}
+                // onClick={e => e.preventDefault()}
+                color="transparent"
+              >
+                About Us
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Button
+                href=""
                 className={classes.navLink}
                 // onClick={e => e.preventDefault()}
                 color="transparent"
@@ -50,17 +61,7 @@ class Navigation extends React.Component {
                 // onClick={e => e.preventDefault()}
                 color="transparent"
               >
-                Specials
-              </Button>
-            </ListItem>
-            <ListItem className={classes.listItem}>
-              <Button
-                href=""
-                className={classes.navLink}
-                // onClick={e => e.preventDefault()}
-                color="transparent"
-              >
-                Careers
+                Prices
               </Button>
             </ListItem>
             <ListItem className={classes.listItem}>
