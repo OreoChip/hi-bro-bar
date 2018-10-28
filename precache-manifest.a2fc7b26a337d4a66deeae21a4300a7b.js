@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "/hi-bro-bar/static/js/runtime~main.1dbba8ad.js"
   },
   {
-    "revision": "49be7e43381d6d1e8439",
-    "url": "/hi-bro-bar/static/js/main.49be7e43.chunk.js"
+    "revision": "d0319deace7700453877",
+    "url": "/hi-bro-bar/static/js/main.d0319dea.chunk.js"
   },
   {
-    "revision": "1b3a2c6667d1a20c5e61",
-    "url": "/hi-bro-bar/static/js/1.1b3a2c66.chunk.js"
+    "revision": "66fe1490b4c722d182c3",
+    "url": "/hi-bro-bar/static/js/1.66fe1490.chunk.js"
   },
   {
-    "revision": "49be7e43381d6d1e8439",
+    "revision": "d0319deace7700453877",
     "url": "/hi-bro-bar/static/css/main.452f45a8.chunk.css"
   },
   {
-    "revision": "c472ac173a7dc8814d22e65670178957",
+    "revision": "3055b7dbb069eb292899588a80fd0bd4",
     "url": "/hi-bro-bar/index.html"
   }
 ];
