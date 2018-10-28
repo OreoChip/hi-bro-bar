@@ -1,21 +1,37 @@
-import React, { PropTypes } from 'react';
+import React, { Component } from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Header from 'design-system/components/Header/Header.jsx';
-import CustomDropdown from 'design-system/components/CustomDropdown/CustomDropdown.jsx';
 import Button from 'design-system/components/CustomButtons/Button.jsx';
 import navbarsStyle from 'design-system/assets/jss/material-kit-react/views/componentsSections/navbarsStyle.jsx';
 
-class Navigation extends React.Component {
+const navOptions = [
+  { text: 'Home' },
+  { text: 'Services' },
+  { text: 'Special' },
+  { text: 'Careers' },
+  { text: 'Contact' }
+];
+
+class Navigation extends Component {
   static propTypes = {};
+
+  renderButton = (option, idx) => {
+    return (
+      <ListItem className={this.props.classes.listItem} key={`nav-${idx}`}>
+        <Button className={this.props.classes.navLink} color="transparent">
+          {option.text}
+        </Button>
+      </ListItem>
+    );
+  };
 
   render() {
     const { classes } = this.props;
     return (
       <Header
-        brand="Hi Bro Bar"
-        href="home"
+        brand="Hi Brow Bar"
         color="transparent"
         fixed
         changeColorOnScroll={{
@@ -24,56 +40,7 @@ class Navigation extends React.Component {
         }}
         rightLinks={
           <List className={classes.list}>
-            <ListItem className={classes.listItem}>
-              <Button
-                href=""
-                className={classes.navLink}
-                // onClick={e => e.preventDefault()}
-                color="transparent"
-              >
-                Home
-              </Button>
-            </ListItem>
-            <ListItem className={classes.listItem}>
-              <Button
-                href=""
-                className={classes.navLink}
-                // onClick={e => e.preventDefault()}
-                color="transparent"
-              >
-                About Us
-              </Button>
-            </ListItem>
-            <ListItem className={classes.listItem}>
-              <Button
-                href=""
-                className={classes.navLink}
-                // onClick={e => e.preventDefault()}
-                color="transparent"
-              >
-                Services
-              </Button>
-            </ListItem>
-            <ListItem className={classes.listItem}>
-              <Button
-                href=""
-                className={classes.navLink}
-                // onClick={e => e.preventDefault()}
-                color="transparent"
-              >
-                Prices
-              </Button>
-            </ListItem>
-            <ListItem className={classes.listItem}>
-              <Button
-                href=""
-                className={classes.navLink}
-                // onClick={e => e.preventDefault()}
-                color="transparent"
-              >
-                Contact
-              </Button>
-            </ListItem>        
+            {navOptions.map(this.renderButton)}
           </List>
         }
       />
