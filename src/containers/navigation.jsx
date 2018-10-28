@@ -31,7 +31,7 @@ class Navigation extends Component {
     const { classes } = this.props;
     return (
       <Header
-        brand="Hi Bro Bar"
+        brand="Hi Brow Bar"
         color="transparent"
         fixed
         changeColorOnScroll={{

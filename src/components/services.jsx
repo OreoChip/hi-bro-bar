@@ -72,6 +72,7 @@ export default class services extends Component {
   };
 
   renderBlock = (option, i) => {
+    const { classes } = this.props;
     return (
       <CardActionArea>
         <CardContent>
@@ -85,7 +86,7 @@ export default class services extends Component {
                 flexDirection: 'row',
                 justifyContent: 'space-between'
               }}>
-                <Typography key={`block-${i}-${idx}-text`}>{optionDesc.text}</Typography>
+                <Typography key={`block-${i}-${idx}-text`} className={optionDesc.extra ? classes.servicePadded : ''}>{optionDesc.text}</Typography>
                 <Typography key={`block-${i}-${idx}-price`}>${optionDesc.price}</Typography>
               </div>
             )

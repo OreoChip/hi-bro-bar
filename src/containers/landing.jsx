@@ -9,6 +9,7 @@ import { container } from 'design-system/assets/jss/material-kit-react.jsx';
 import MastHead from 'components/masthead';
 import Services from 'components/services';
 import Careers from 'components/careers';
+import Contact from 'components/contact';
 
 const styles = () => ({
   slick1: {
@@ -132,6 +133,20 @@ const styles = () => ({
   },
   careersText: {
     marginBottom: 20
+  },
+  contact: {},
+  map: {
+    height: 200,
+    width: 300,
+    border: '1px solid'
+  },
+  locationContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around'
+  },
+  servicePadded: {
+    paddingLeft: 20
   }
 });
 
@@ -182,6 +197,7 @@ class Landing extends Component {
         <MastHead classes={classes} />
         <Services classes={classes} />
         <Careers classes={classes} />
+        <Contact classes={classes} />
       </div>
     );
   }
