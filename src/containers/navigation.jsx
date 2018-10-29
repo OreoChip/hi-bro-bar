@@ -12,7 +12,12 @@ import navbarsStyle from 'design-system/assets/jss/material-kit-react/views/comp
 const navOptions = [
   { text: 'Home', componentString: 'mastHead' },
   { text: 'Services', componentString: 'services' },
-  { text: 'Special' },
+  {
+    text: 'Specials',
+    onClick: () => {
+      PubSub.publish('openSpecials');
+    }
+  },
   { text: 'Careers', componentString: 'careers' },
   { text: 'Contact', componentString: 'contact' }
 ];
@@ -24,9 +29,13 @@ class Navigation extends Component {
     return (
       <ListItem
         className={this.props.classes.listItem}
-        onClick={() => {
-          option.componentString &&
-            PubSub.publish('scrollTo', option.componentString);
+        onClick={e => {
+          if (option.onClick) {
+            option.onClick(e);
+          } else {
+            option.componentString &&
+              PubSub.publish('scrollTo', option.componentString);
+          }
         }}
         key={`nav-${idx}`}
       >
