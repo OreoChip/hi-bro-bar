@@ -50,9 +50,10 @@ class Navigation extends Component {
     const { classes } = this.props;
     return (
       <Header
-        brand="Hi Brow Bar"
+        brand={'Hi Brow Bar'}
         color="white"
         fixed
+        bioRhyme
         rightLinks={
           <List className={classes.list}>
             {navOptions.map(this.renderButton)}

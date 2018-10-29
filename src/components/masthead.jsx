@@ -7,7 +7,6 @@ import classNames from 'classnames';
 import PeopleIcon from '@material-ui/icons/PeopleOutline';
 import ClockIcon from '@material-ui/icons/AccessTime';
 import LocationIcon from '@material-ui/icons/LocationOn';
-import SpecialIcon from '@material-ui/icons/Gesture';
 import Card from '@material-ui/core/Card/Card';
 import CardActionArea from '@material-ui/core/CardActionArea/CardActionArea';
 import CardContent from '@material-ui/core/CardContent/CardContent';
