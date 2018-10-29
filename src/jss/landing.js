@@ -39,6 +39,10 @@ const servicesStyles = {
 };
 
 const careerStyles = {
+  careersContainer: {
+    maxWidth: 700,
+    margin: 'auto'
+  },
   careers: {
     boxShadow: 'none',
     marginTop: 70
@@ -66,16 +70,24 @@ const contactStyles = {
   locationContainer: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-around'
+    justifyContent: 'space-between'
   }
 };
 
 const basicStyles = {
+  hr: {
+    margin: '80px 80px 50px',
+    borderColor: '#e8e8ea'
+  },
   container: {
     zIndex: '12',
     color: '#FFFFFF',
     padding: 20,
     ...container
+  },
+  smallWidth: {
+    paddingLeft: 100,
+    paddingRight: 100
   },
   main: {
     background: '#FFFFFF',
@@ -105,6 +117,12 @@ const basicStyles = {
   cardsContainer: {
     display: 'flex',
     flexDirection: 'row'
+  },
+  fullPageSection: {
+    minHeight: '70vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center'
   },
   card: {
     width: '25%',

@@ -3,6 +3,7 @@
  */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 const options = [
   {
@@ -31,7 +32,7 @@ export default class careers extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <React.Fragment>
+      <div className={classNames(classes.fullPageSection, classes.smallWidth, classes.careersContainer)}>
         <div className={classes.sectionHeading}>Careers</div>
         <div style={{ color: 'black' }}>
           <div className={classes.careerDesc}>
@@ -56,7 +57,7 @@ export default class careers extends Component {
             </React.Fragment>
           ))}
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }

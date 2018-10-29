@@ -9,7 +9,9 @@ import CardMedia from '@material-ui/core/CardMedia/CardMedia';
 import CardContent from '@material-ui/core/CardContent/CardContent';
 import Typography from '@material-ui/core/Typography/Typography';
 
-import image1 from 'assets/eyeBrow.jpeg';
+import image1 from 'assets/threading.jpg';
+import image2 from 'assets/waxing.jpg';
+import image3 from 'assets/facial.jpg';
 
 const cards = [
   {
@@ -23,11 +25,11 @@ const cards = [
       { text: 'Chin', price: 8 },
       { text: 'Side Bum', price: 12 },
       { text: 'Full Face', price: 30 },
-      { text: 'with neck (extra)', price: 6, extra: true }
+      { text: ' - with neck (extra)', price: 6 }
     ]
   },
   {
-    img: image1,
+    img: image2,
     heading: 'Wax',
     options: [
       { text: 'Under Arm', price: 10 },
@@ -42,7 +44,7 @@ const cards = [
     ]
   },
   {
-    img: image1,
+    img: image3,
     sections: [
       {
         heading: 'Facials',

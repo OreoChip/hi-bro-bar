@@ -61,8 +61,11 @@ class Landing extends Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classNames(classes.container)}>
             <MastHead classes={classes} />
+            <hr className={classes.hr} />
             <Services classes={classes} />
+            <hr className={classes.hr} />
             <Careers classes={classes} />
+            <hr className={classes.hr} />
             <Contact classes={classes} />
           </div>
         </div>
