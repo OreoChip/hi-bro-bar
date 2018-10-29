@@ -1,6 +1,3 @@
-import image1 from 'assets/image2.jpg';
-import image2 from 'assets/image3.jpg';
-import image from 'assets/parallax.jpg';
 import { container } from 'design-system/assets/jss/material-kit-react';
 
 const slickStyles = {
@@ -9,13 +6,13 @@ const slickStyles = {
     backgroundSize: '100% 100%'
   },
   slick1: {
-    background: `url(${image})`
+    background: `url('https://previews.123rf.com/images/fiphoto/fiphoto1405/fiphoto140503323/28597163-brand-new-interior-of-european-beauty-salon.jpg')`
   },
   slick2: {
-    background: `url(${image1})`
+    background: `url('https://previews.123rf.com/images/fiphoto/fiphoto1407/fiphoto140700306/30425045-brand-new-interior-of-european-beauty-salon.jpg')`
   },
   slick3: {
-    background: `url(${image2})`
+    background: `url('https://previews.123rf.com/images/fiphoto/fiphoto1310/fiphoto131000040/22857416-brand-new-and-very-clean-european-hair-salon.jpg')`
   }
 };
 

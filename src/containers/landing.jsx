@@ -9,6 +9,7 @@ import MastHead from 'components/masthead';
 import Services from 'components/services';
 import Careers from 'components/careers';
 import Contact from 'components/contact';
+import Specials from 'containers/specials';
 
 import { styles } from 'jss/landing';
 
@@ -16,7 +17,7 @@ const slickSettings = {
   dots: false,
   infinite: true,
   speed: 500,
-  autoplay: false,
+  autoplay: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false
@@ -100,6 +101,7 @@ class Landing extends Component {
         >
           <Contact classes={this.props.classes} />
         </div>
+        <Specials/>
       </div>
     );
   }
