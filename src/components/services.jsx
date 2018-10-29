@@ -112,12 +112,12 @@ export default class services extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <React.Fragment>
+      <div className={classes.services}>
         <div className={classes.sectionHeading}>Services</div>
         <div className={classes.cardsContainer}>
           {cards.map(this.renderCard)}
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
