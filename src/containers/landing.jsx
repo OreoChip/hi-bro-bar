@@ -23,11 +23,9 @@ const slickSettings = {
 class Landing extends Component {
   overlayText = (
     <div className={this.props.classes.headingText}>
-      <h4 className={this.props.classes.h4}>
-        Welcome to
-        <br />
-        Hi Brow Threading Solution
-      </h4>
+      <div className={this.props.classes.welcomeHeading}>
+        HI Brow Threading Solution
+      </div>
       <div>
         <p>
           Hi Brow Bar of Falls Church and Alexandria, offers the best services
