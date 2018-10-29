@@ -14,7 +14,17 @@ export default class RouterContainer extends Component {
           <Switch>
             <Route path="/" component={Landing} />
           </Switch>
-          <Footer />
+          <Footer
+            icons={[
+              { icon: 'fab fa-facebook', url: 'https://facebook.com' },
+              {
+                icon: 'fab fa-yelp',
+                url:
+                  'https://www.yelp.com/biz/hi-brow-bar-eye-brow-threading-salon-falls-church'
+              },
+              { icon: 'fas fa-at', url: 'mailto:hello@oreochip.com' }
+            ]}
+          />
         </div>
       </Router>
     );
