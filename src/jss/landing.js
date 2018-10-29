@@ -147,7 +147,7 @@ const basicStyles = {
     marginTop: 0,
     textTransform: 'uppercase',
     fontSize: 44,
-    fontFamily: 'Farsan',
+    fontFamily: "'Tillana', cursive",
     fontWeight: 700
   },
   sectionHeading: {
@@ -156,7 +156,7 @@ const basicStyles = {
     textAlign: 'center',
     marginTop: 60,
     marginBottom: 60,
-    fontFamily: 'Farsan'
+    fontFamily: 'Montserrat Alternates, sans-serif'
   }
 };
 

@@ -24,7 +24,7 @@ class Landing extends Component {
   overlayText = (
     <div className={this.props.classes.headingText}>
       <div className={this.props.classes.welcomeHeading}>
-        Welcome to Hi Brow Threading Solution
+        HI Brow Threading Solution
       </div>
       <div>
         <p>
