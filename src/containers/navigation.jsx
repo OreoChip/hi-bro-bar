@@ -51,12 +51,8 @@ class Navigation extends Component {
     return (
       <Header
         brand="Hi Brow Bar"
-        color="transparent"
+        color="white"
         fixed
-        changeColorOnScroll={{
-          height: 100,
-          color: 'white'
-        }}
         rightLinks={
           <List className={classes.list}>
             {navOptions.map(this.renderButton)}
