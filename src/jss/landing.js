@@ -1,0 +1,195 @@
+import { container } from 'design-system/assets/jss/material-kit-react';
+
+const slickStyles = {
+  slick: {
+    height: '600px',
+    backgroundSize: '100% 100%'
+  },
+  slick1: {
+    background: `url('https://previews.123rf.com/images/fiphoto/fiphoto1405/fiphoto140503323/28597163-brand-new-interior-of-european-beauty-salon.jpg')`
+  },
+  slick2: {
+    background: `url('https://previews.123rf.com/images/fiphoto/fiphoto1407/fiphoto140700306/30425045-brand-new-interior-of-european-beauty-salon.jpg')`
+  },
+  slick3: {
+    background: `url('https://previews.123rf.com/images/fiphoto/fiphoto1310/fiphoto131000040/22857416-brand-new-and-very-clean-european-hair-salon.jpg')`
+  }
+};
+
+const mastHeadStyles = {
+  mastheadContainer: {
+    padding: '15px 0'
+  }
+};
+
+const servicesStyles = {
+  services: {
+    marginTop: 80,
+    boxShadow: 'none'
+  },
+  serviceImage: {
+    height: 200
+  },
+  servicePadded: {
+    paddingLeft: 20
+  }
+};
+
+const careerStyles = {
+  careersContainer: {
+    maxWidth: 700,
+    margin: 'auto'
+  },
+  careers: {
+    boxShadow: 'none',
+    marginTop: 70
+  },
+  careerDesc: {
+    marginBottom: 50
+  },
+  careersHeading: {
+    fontWeight: 'bold'
+  },
+  careersText: {
+    marginBottom: 20
+  }
+};
+
+const contactStyles = {
+  contact: {},
+  map: {
+    height: 200,
+    width: 300,
+    boxShadow: '3px 5px 5px #888888'
+  },
+  locationContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  }
+};
+
+const basicStyles = {
+  hr: {
+    margin: '80px 80px 50px',
+    borderColor: '#e8e8ea'
+  },
+  container: {
+    zIndex: '12',
+    color: '#FFFFFF',
+    padding: 20,
+    ...container
+  },
+  smallWidth: {
+    paddingLeft: 100,
+    paddingRight: 100
+  },
+  main: {
+    background: '#FFFFFF',
+    position: 'relative',
+    zIndex: '3'
+  },
+  mainRaised: {
+    margin: '0px 70px 0px',
+    borderRadius: '6px',
+    boxShadow:
+      '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)'
+  },
+  topRaised: {
+    marginTop: -60
+  },
+  raisedFull: {
+    margin: 0
+  },
+  fontColor: {
+    color: 'black',
+    padding: '10px 0px',
+    textAlign: 'center'
+  },
+  fontColor1: {
+    color: 'black',
+    paddingBottom: '20px',
+    textAlign: 'center'
+  },
+  media: {
+    height: 0,
+    paddingTop: '50%'
+  },
+  cardsContainer: {
+    display: 'flex',
+    flexDirection: 'row'
+  },
+  fullPageSection: {
+    minHeight: '70vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center'
+  },
+  card: {
+    width: '25%',
+    margin: 20,
+    boxSizing: 'border-box',
+    textAlign: 'center'
+  },
+  cardServices: {
+    width: '33%',
+    margin: 20,
+    boxSizing: 'border-box',
+    textAlign: 'center'
+  },
+  icon: {
+    color: '#000',
+    fontSize: 50,
+    margin: 20
+  },
+  locationIcon: {
+    color: '#8e8ef3'
+  },
+  specialIcon: {
+    color: '#e86c6c'
+  },
+  clockIcon: {
+    color: '#70d470'
+  },
+  experienceIcon: {
+    color: 'grey'
+  },
+  headingText: {
+    width: '50%',
+    position: 'absolute',
+    top: 100,
+    left: '10%',
+    color: 'black',
+    background: 'rgba(255, 255, 255, 0.60)',
+    padding: 50,
+    borderRadius: 5,
+    marginTop: 65
+  },
+  welcomeHeading: {
+    marginTop: 0,
+    textTransform: 'uppercase',
+    fontSize: 44,
+    fontFamily: "'Tillana', cursive",
+    fontWeight: 700
+  },
+  sectionHeading: {
+    fontSize: 44,
+    color: 'gray',
+    textAlign: 'center',
+    marginTop: 60,
+    marginBottom: 60,
+    fontFamily: 'Montserrat Alternates, sans-serif'
+  },
+  marginBottom20: {
+    marginBottom: '20px !important'
+  }
+};
+
+export const styles = {
+  ...basicStyles,
+  ...slickStyles,
+  ...mastHeadStyles,
+  ...servicesStyles,
+  ...careerStyles,
+  ...contactStyles
+};

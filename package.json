@@ -4,8 +4,10 @@
   "private": true,
   "homepage": "https://oreochip.github.com/hi-bro-bar/",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.4.2",
     "@material-ui/core": "^3.3.0",
     "@material-ui/icons": "^3.0.1",
+    "pubsub-js": "^1.7.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-router-dom": "^4.3.1",
