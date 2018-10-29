@@ -48,7 +48,7 @@ const careerStyles = {
     marginTop: 70
   },
   careerDesc: {
-    marginBottom: 20
+    marginBottom: 50
   },
   careersHeading: {
     fontWeight: 'bold'
@@ -63,7 +63,7 @@ const contactStyles = {
   map: {
     height: 200,
     width: 300,
-    border: '1px solid'
+    boxShadow: '3px 5px 5px #888888'
   },
   locationContainer: {
     display: 'flex',
@@ -181,6 +181,9 @@ const basicStyles = {
     marginTop: 60,
     marginBottom: 60,
     fontFamily: 'Montserrat Alternates, sans-serif'
+  },
+  marginBottom20: {
+    marginBottom: '20px !important'
   }
 };
 

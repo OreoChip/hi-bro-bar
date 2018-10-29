@@ -64,9 +64,14 @@ export default class contact extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classNames(classes.fullPageSection, classes.smallWidth)}>
-        <div className={classes.sectionHeading}>Contact</div>
-        <div style={{ color: 'black' }}>
+      <div
+        className={classNames(
+          classes.fullPageSection,
+          classes.smallWidth
+        )}
+      >
+        <div className={classNames(classes.sectionHeading, classes.marginBottom20)}>Contact</div>
+        <div style={{ color: 'black', textAlign: 'center' }}>
           <div className={classes.careerDesc}>
             Proudly Serving Falls Church and Alexandria locations, 7 days a
             week!
@@ -78,9 +83,7 @@ export default class contact extends Component {
                   {location.location}
                 </div>
                 <div className={classes.careersText}>{location.address}</div>
-                <div className={classes.map}>
-                  {location.iframe}
-                </div>
+                <div className={classes.map}>{location.iframe}</div>
               </div>
             ))}
           </div>
