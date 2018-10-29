@@ -3,7 +3,6 @@
  */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 
 const locations = [
   {
@@ -46,28 +45,26 @@ export default class contact extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classNames(classes.main, classes.contact)}>
-        <div className={classNames(classes.container)}>
-          <div className={classes.sectionHeading}>Contact</div>
-          <div style={{ color: 'black' }}>
-            <div className={classes.careerDesc}>
-              Proudly Serving Falls Church and Alexandria locations, 7 days a
-              week!
-            </div>
-            <div className={classes.locationContainer}>
-            {locations.map((location, i) => (
-              <div key={`contact-section-${i}`}>
-                <div className={classes.careersHeading}>
-                  {location.location}
-                </div>
-                <div className={classes.careersText}>{location.address}</div>
-                <div className={classes.map}>MAP HERE</div>
+      <React.Fragment>
+        <div className={classes.sectionHeading}>Contact</div>
+        <div style={{ color: 'black' }}>
+          <div className={classes.careerDesc}>
+            Proudly Serving Falls Church and Alexandria locations, 7 days a
+            week!
+          </div>
+          <div className={classes.locationContainer}>
+          {locations.map((location, i) => (
+            <div key={`contact-section-${i}`}>
+              <div className={classes.careersHeading}>
+                {location.location}
               </div>
-            ))}
+              <div className={classes.careersText}>{location.address}</div>
+              <div className={classes.map}>MAP HERE</div>
             </div>
+          ))}
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

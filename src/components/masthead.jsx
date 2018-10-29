@@ -78,12 +78,8 @@ export default class masthead extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classNames(classes.container)}>
-          <div className={classes.cardsContainer}>
-            {options.map(this.renderCard)}
-          </div>
-        </div>
+      <div className={classNames(classes.cardsContainer, classes.mastheadContainer)}>
+        {options.map(this.renderCard)}
       </div>
     );
   }

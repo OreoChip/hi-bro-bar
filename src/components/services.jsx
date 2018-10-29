@@ -3,7 +3,6 @@
  */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import Card from '@material-ui/core/Card/Card';
 import CardActionArea from '@material-ui/core/CardActionArea/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia/CardMedia';
@@ -111,14 +110,12 @@ export default class services extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classNames(classes.main, classes.mainRaised, classes.services)}>
-        <div className={classNames(classes.container)}>
-          <div className={classes.sectionHeading}>Services</div>
-          <div className={classes.cardsContainer}>
-            {cards.map(this.renderCard)}
-          </div>
+      <React.Fragment>
+        <div className={classes.sectionHeading}>Services</div>
+        <div className={classes.cardsContainer}>
+          {cards.map(this.renderCard)}
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

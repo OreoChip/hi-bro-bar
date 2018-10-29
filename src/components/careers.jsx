@@ -3,7 +3,6 @@
  */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 
 const options = [
   {
@@ -32,40 +31,32 @@ export default class careers extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div
-        className={classNames(
-          classes.main,
-          classes.mainRaised,
-          classes.careers
-        )}
-      >
-        <div className={classNames(classes.container)}>
-          <div className={classes.sectionHeading}>Careers</div>
-          <div style={{ color: 'black' }}>
-            <div className={classes.careerDesc}>
-              If you have passion for skin care, beauty, and facial treatment,
-              we are looking for you. Full-time or part-time, both types of
-              opportunities are available. Contact us and be part of our
-              ever-growing great team!
-            </div>
-            {options.map((option, i) => (
-              <React.Fragment>
-                <div
-                  className={classes.careersHeading}
-                  key={`careers-section-${i}`}
-                >
-                  {option.heading}
-                </div>
-                <div className={classes.careersText}>
-                  {option.texts.map((text, idx) => (
-                    <div key={`careers-section-${i}-${idx}`}>{text}</div>
-                  ))}
-                </div>
-              </React.Fragment>
-            ))}
+      <React.Fragment>
+        <div className={classes.sectionHeading}>Careers</div>
+        <div style={{ color: 'black' }}>
+          <div className={classes.careerDesc}>
+            If you have passion for skin care, beauty, and facial treatment, we
+            are looking for you. Full-time or part-time, both types of
+            opportunities are available. Contact us and be part of our
+            ever-growing great team!
           </div>
+          {options.map((option, i) => (
+            <React.Fragment>
+              <div
+                className={classes.careersHeading}
+                key={`careers-section-${i}`}
+              >
+                {option.heading}
+              </div>
+              <div className={classes.careersText}>
+                {option.texts.map((text, idx) => (
+                  <div key={`careers-section-${i}-${idx}`}>{text}</div>
+                ))}
+              </div>
+            </React.Fragment>
+          ))}
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
