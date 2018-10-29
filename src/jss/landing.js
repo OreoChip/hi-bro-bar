@@ -44,12 +44,10 @@ const careerStyles = {
     marginTop: 70
   },
   careerDesc: {
-    fontSize: 16,
     marginBottom: 20
   },
   careersHeading: {
-    fontWeight: 'bold',
-    marginBottom: 10
+    fontWeight: 'bold'
   },
   careersText: {
     marginBottom: 20
@@ -145,16 +143,20 @@ const basicStyles = {
     padding: 50,
     borderRadius: 5
   },
-  h4: {
+  welcomeHeading: {
     marginTop: 0,
     textTransform: 'uppercase',
-    fontSize: 35
+    fontSize: 44,
+    fontFamily: 'Farsan',
+    fontWeight: 700
   },
   sectionHeading: {
-    fontSize: 40,
+    fontSize: 44,
     color: 'gray',
     textAlign: 'center',
-    marginBottom: 60
+    marginTop: 60,
+    marginBottom: 60,
+    fontFamily: 'Farsan'
   }
 };
 
