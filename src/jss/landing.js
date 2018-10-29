@@ -165,7 +165,8 @@ const basicStyles = {
     color: 'black',
     background: 'rgba(255, 255, 255, 0.60)',
     padding: 50,
-    borderRadius: 5
+    borderRadius: 5,
+    marginTop: 65
   },
   welcomeHeading: {
     marginTop: 0,

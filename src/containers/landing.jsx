@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import classNames from 'classnames';
 import withStyles from '@material-ui/core/styles/withStyles';
+import PubSub from 'pubsub-js';
 
 import Slider from 'react-slick';
 import MastHead from 'components/masthead';
@@ -27,24 +29,30 @@ class Landing extends Component {
         HI Brow Threading Solution
       </div>
       <div>
-        <p>
-          Hi Brow Bar of Falls Church and Alexandria, offers the best services
-          at reasonable prices for your eyebrow threading, facial, waxing,
-          beauty treatments, and other needs. Our excellent staff and facility
-          is proudly serving customers for over 10 years. If you need special
-          assistance, let us know and we will happy to take care.
-        </p>
-        <p>
-          We have great reviews and feedback from our customers, have lot of
-          returning clientele, and provide 100% satisfaction for services.
-        </p>
-        <p>
-          Call in or simply walk-in, relax, and let our professional and highly
-          trained staff take care of the rest.
-        </p>
+        Hi Brow Bar of Falls Church and Alexandria, offers the best services at
+        reasonable prices for your eyebrow threading, facial, waxing, beauty
+        treatments, and other needs. Our excellent staff and facility is proudly
+        serving customers for over 10 years. If you need special assistance, let
+        us know and we will happy to take care.
       </div>
     </div>
   );
+
+  scrollTo = component => {
+    const domNode = ReactDOM.findDOMNode(component);
+    if (domNode) domNode.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  componentWillMount() {
+    this.scrollSubs = PubSub.subscribe('scrollTo', (topic, componentString) => {
+      debugger;
+      this.scrollTo(this[componentString]);
+    });
+  }
+
+  componentWillUnmount() {
+    PubSub.unsubscribe(this.scrollSubs);
+  }
 
   render() {
     const { classes } = this.props;
@@ -56,21 +64,41 @@ class Landing extends Component {
           <div className={classNames(classes.slick, classes.slick3)} />
         </Slider>
         {this.overlayText}
-        <div className={classNames(classes.main, classes.mainRaised, classes.topRaised)}>
-          <div className={classNames(classes.container)}>
-            <MastHead classes={classes} />
+        <div
+          className={classNames(
+            this.props.classes.main,
+            this.props.classes.mainRaised,
+            this.props.classes.topRaised
+          )}
+          ref={c => (this.mastHead = c)}
+        >
+          <div className={classNames(this.props.classes.container)}>
+            <MastHead classes={this.props.classes} />
           </div>
         </div>
-        <div className={classNames(classes.container)}>
-          <Services classes={classes} />
+        <div
+          className={classNames(this.props.classes.container)}
+          ref={c => (this.services = c)}
+        >
+          <Services classes={this.props.classes} />
         </div>
-        <div className={classNames(classes.main, classes.mainRaised, classes.raisedFull)}>
-          <div className={classNames(classes.container)}>
-            <Careers classes={classes} />
+        <div
+          className={classNames(
+            this.props.classes.main,
+            this.props.classes.mainRaised,
+            this.props.classes.raisedFull
+          )}
+          ref={c => (this.careers = c)}
+        >
+          <div className={classNames(this.props.classes.container)}>
+            <Careers classes={this.props.classes} />
           </div>
         </div>
-        <div className={classNames(classes.container)}>
-          <Contact classes={classes} />
+        <div
+          className={classNames(this.props.classes.container)}
+          ref={c => (this.contact = c)}
+        >
+          <Contact classes={this.props.classes} />
         </div>
       </div>
     );
