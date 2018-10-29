@@ -56,13 +56,21 @@ class Landing extends Component {
           <div className={classNames(classes.slick, classes.slick3)} />
         </Slider>
         {this.overlayText}
-        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classNames(classes.main, classes.mainRaised, classes.topRaised)}>
           <div className={classNames(classes.container)}>
             <MastHead classes={classes} />
-            <Services classes={classes} />
-            <Careers classes={classes} />
-            <Contact classes={classes} />
           </div>
+        </div>
+        <div className={classNames(classes.container)}>
+          <Services classes={classes} />
+        </div>
+        <div className={classNames(classes.main, classes.mainRaised, classes.raisedFull)}>
+          <div className={classNames(classes.container)}>
+            <Careers classes={classes} />
+          </div>
+        </div>
+        <div className={classNames(classes.container)}>
+          <Contact classes={classes} />
         </div>
       </div>
     );

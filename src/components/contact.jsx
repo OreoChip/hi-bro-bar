@@ -3,6 +3,7 @@
  */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 const locations = [
   {
@@ -45,7 +46,7 @@ export default class contact extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <React.Fragment>
+      <div className={classNames(classes.fullPageSection, classes.smallWidth)}>
         <div className={classes.sectionHeading}>Contact</div>
         <div style={{ color: 'black' }}>
           <div className={classes.careerDesc}>
@@ -64,7 +65,7 @@ export default class contact extends Component {
           ))}
           </div>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
