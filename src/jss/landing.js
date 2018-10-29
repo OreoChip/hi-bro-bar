@@ -3,6 +3,22 @@ import image2 from 'assets/image3.jpg';
 import image from 'assets/parallax.jpg';
 import { container } from 'design-system/assets/jss/material-kit-react';
 
+const slickStyles = {
+  slick: {
+    height: '600px',
+    backgroundSize: '100% 100%'
+  },
+  slick1: {
+    background: `url(${image})`
+  },
+  slick2: {
+    background: `url(${image1})`
+  },
+  slick3: {
+    background: `url(${image2})`
+  }
+};
+
 const mastHeadStyles = {
   mastheadContainer: {
     paddingTop: 30
@@ -55,19 +71,6 @@ const contactStyles = {
 };
 
 const basicStyles = {
-  slick: {
-    height: '600px',
-    backgroundSize: '100% 100%'
-  },
-  slick1: {
-    background: `url(${image})`
-  },
-  slick2: {
-    background: `url(${image1})`
-  },
-  slick3: {
-    background: `url(${image2})`
-  },
   container: {
     zIndex: '12',
     color: '#FFFFFF',
@@ -80,7 +83,7 @@ const basicStyles = {
     zIndex: '3'
   },
   mainRaised: {
-    margin: '-60px 30px 0px',
+    margin: '-60px 70px 0px',
     borderRadius: '6px',
     boxShadow:
       '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)'
@@ -157,6 +160,7 @@ const basicStyles = {
 
 export const styles = {
   ...basicStyles,
+  ...slickStyles,
   ...mastHeadStyles,
   ...servicesStyles,
   ...careerStyles,
