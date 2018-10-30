@@ -35,6 +35,13 @@ const servicesStyles = {
   },
   servicePadded: {
     paddingLeft: 20
+  },
+  textFont:{
+    fontFamily: 'Alegreya Sans, sans-serif'
+  },
+  servicesHeader:{
+    fontFamily: 'Alegreya Sans, sans-serif',
+    fontWeight: "bold"
   }
 };
 
@@ -170,7 +177,6 @@ const basicStyles = {
   },
   welcomeHeading: {
     marginTop: 0,
-    textTransform: 'uppercase',
     fontSize: 44,
     fontFamily: "'Tillana', cursive",
     fontWeight: 700
@@ -185,6 +191,9 @@ const basicStyles = {
   },
   marginBottom20: {
     marginBottom: '20px !important'
+  },
+  welcomeText: {
+    fontSize: 25
   }
 };
 

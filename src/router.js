@@ -24,6 +24,7 @@ export default class RouterContainer extends Component {
               },
               { icon: 'fas fa-at', url: 'mailto:hello@oreochip.com' }
             ]}
+            rightText={"© 2018 Hi Brow Bar"}
           />
         </div>
       </Router>
