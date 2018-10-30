@@ -10,7 +10,7 @@ import PubSub from 'pubsub-js';
 
 export default class Specials extends React.Component {
   state = {
-    open: false,
+    open: false
   };
 
   handleClickOpen = () => {
@@ -23,8 +23,8 @@ export default class Specials extends React.Component {
 
   componentDidMount() {
     this.openModal = PubSub.subscribe('openSpecials', () => {
-      this.handleClickOpen()
-    })
+      this.handleClickOpen();
+    });
   }
 
   componentWillUnmount() {
@@ -33,37 +33,35 @@ export default class Specials extends React.Component {
 
   render() {
     return (
-      <div>
-        <Button onClick={this.handleClickOpen}>Open form dialog</Button>
-        <Dialog
-          open={this.state.open}
-          onClose={this.handleClose}
-          aria-labelledby="form-dialog-title"
-        >
-          <DialogTitle id="form-dialog-title">Specials</DialogTitle>
-          <DialogContent>
-            <DialogContentText>
-              No Special Offers at this time. To receive updates on new offers, please enter your email address here.
-            </DialogContentText>
-            <TextField
-              autoFocus
-              margin="dense"
-              id="name"
-              label="Email Address"
-              type="email"
-              fullWidth
-            />
-          </DialogContent>
-          <DialogActions>
-            <Button onClick={this.handleClose} color="primary">
-              Cancel
-            </Button>
-            <Button onClick={this.handleClose} color="primary">
-              Subscribe
-            </Button>
-          </DialogActions>
-        </Dialog>
-      </div>
+      <Dialog
+        open={this.state.open}
+        onClose={this.handleClose}
+        aria-labelledby="form-dialog-title"
+      >
+        <DialogTitle id="form-dialog-title">Specials</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            No Special Offers at this time. To receive updates on new offers,
+            please enter your email address here.
+          </DialogContentText>
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Email Address"
+            type="email"
+            fullWidth
+          />
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={this.handleClose} color="primary">
+            Cancel
+          </Button>
+          <Button onClick={this.handleClose} color="primary">
+            Subscribe
+          </Button>
+        </DialogActions>
+      </Dialog>
     );
   }
 }
