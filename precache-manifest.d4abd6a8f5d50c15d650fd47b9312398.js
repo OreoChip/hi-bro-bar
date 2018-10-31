@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "c38ef825039cbe8ec76d4f13854f767e",
-    "url": "/hi-bro-bar/static/media/fa-regular-400.c38ef825.eot"
+    "revision": "52899632324b722c9c7931bd38196afb",
+    "url": "/hi-bro-bar/static/media/fa-regular-400.52899632.woff"
   },
   {
     "revision": "1c2c493966a11de5a505",
     "url": "/hi-bro-bar/static/css/main.b38d35e2.chunk.css"
   },
   {
-    "revision": "dec02372212aab5a2e5294f1a11756ed",
-    "url": "/hi-bro-bar/static/media/fa-brands-400.dec02372.ttf"
+    "revision": "3f759796d3d16b8434841d61cd2c007a",
+    "url": "/hi-bro-bar/static/media/fa-solid-900.3f759796.svg"
   },
   {
     "revision": "1deb2be05d1df783560c",
@@ -44,12 +44,12 @@ self.__precacheManifest = [
     "url": "/hi-bro-bar/static/media/image3.22a62e5a.jpg"
   },
   {
-    "revision": "a31c967484b343189fc58bce914ed245",
-    "url": "/hi-bro-bar/static/media/fa-brands-400.a31c9674.eot"
+    "revision": "dec02372212aab5a2e5294f1a11756ed",
+    "url": "/hi-bro-bar/static/media/fa-brands-400.dec02372.ttf"
   },
   {
-    "revision": "3f4d4ad447e748754e994a11ff8c6a6f",
-    "url": "/hi-bro-bar/static/media/fa-brands-400.3f4d4ad4.svg"
+    "revision": "c38ef825039cbe8ec76d4f13854f767e",
+    "url": "/hi-bro-bar/static/media/fa-regular-400.c38ef825.eot"
   },
   {
     "revision": "1c2c493966a11de5a505",
@@ -60,12 +60,12 @@ self.__precacheManifest = [
     "url": "/hi-bro-bar/static/media/fa-regular-400.dd25437a.woff2"
   },
   {
-    "revision": "52899632324b722c9c7931bd38196afb",
-    "url": "/hi-bro-bar/static/media/fa-regular-400.52899632.woff"
-  },
-  {
     "revision": "0e2e26fb3527ae47f9eb1c217592b706",
     "url": "/hi-bro-bar/static/media/fa-regular-400.0e2e26fb.ttf"
+  },
+  {
+    "revision": "a31c967484b343189fc58bce914ed245",
+    "url": "/hi-bro-bar/static/media/fa-brands-400.a31c9674.eot"
   },
   {
     "revision": "b5a61b229c9c92a6ac21f5b0e3c6e9f1",
@@ -84,20 +84,20 @@ self.__precacheManifest = [
     "url": "/hi-bro-bar/static/media/fa-solid-900.09bc9e8c.woff"
   },
   {
-    "revision": "3f759796d3d16b8434841d61cd2c007a",
-    "url": "/hi-bro-bar/static/media/fa-solid-900.3f759796.svg"
-  },
-  {
     "revision": "e143b57de78138e6d5963908afa7e393",
     "url": "/hi-bro-bar/static/media/fa-solid-900.e143b57d.ttf"
+  },
+  {
+    "revision": "e4a6cecbe2bb89b0722b5dc85090af7c",
+    "url": "/hi-bro-bar/static/media/fa-brands-400.e4a6cecb.woff2"
   },
   {
     "revision": "eef6051639f95300dbf0293ad216c6b0",
     "url": "/hi-bro-bar/static/media/fa-brands-400.eef60516.woff"
   },
   {
-    "revision": "e4a6cecbe2bb89b0722b5dc85090af7c",
-    "url": "/hi-bro-bar/static/media/fa-brands-400.e4a6cecb.woff2"
+    "revision": "3f4d4ad447e748754e994a11ff8c6a6f",
+    "url": "/hi-bro-bar/static/media/fa-brands-400.3f4d4ad4.svg"
   },
   {
     "revision": "1deb2be05d1df783560c",
