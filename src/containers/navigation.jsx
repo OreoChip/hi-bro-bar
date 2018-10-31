@@ -3,7 +3,6 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import PubSub from 'pubsub-js';
-import classNames from "classnames";
 
 import Header from 'design-system/components/Header/Header.jsx';
 import Button from 'design-system/components/CustomButtons/Button.jsx';
@@ -46,11 +45,11 @@ class Navigation extends Component {
       </ListItem>
     );
   };
-  renderBrand = (classes) => {
+  renderBrand = () => {
     return (
-    <div className={classes.brandContainter}>
-      <div className={classes.mainText}>Hi Brow Bar</div>
-      <div className={classes.subText}>Threading, Facial, & Waxing Salon</div>
+    <div className={this.props.classes.brandContainter}>
+      <div className={this.props.classes.mainText}>Hi Brow Bar</div>
+      <div className={this.props.classes.subText}>Threading, Facial, & Waxing Salon</div>
     </div>
     )
   }
@@ -60,7 +59,7 @@ class Navigation extends Component {
     return (
       <Header
         brand={
-          this.renderBrand(classes)
+          this.renderBrand()
         }
         color="white"
         fixed
