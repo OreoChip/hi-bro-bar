@@ -29,7 +29,7 @@ const mastHeadStyles = {
     fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
     fontWeight: '500',
     lineHeight: '1.6',
-    letterSpacing: '0.0075em',
+    letterSpacing: '0.0075em'
   }
 };
 
@@ -45,12 +45,12 @@ const servicesStyles = {
   servicePadded: {
     paddingLeft: 10
   },
-  textFont:{
+  textFont: {
     fontFamily: 'Alegreya Sans, sans-serif'
   },
-  servicesHeader:{
+  servicesHeader: {
     fontFamily: 'Alegreya Sans, sans-serif',
-    fontWeight: "bold"
+    fontWeight: 'bold'
   }
 };
 
@@ -186,7 +186,7 @@ const basicStyles = {
     top: 100,
     left: '10%',
     color: 'white',
-    background: 'rgba(142, 142, 243, 0.9)',
+    background: 'rgba(142, 142, 243, 0.8)',
     padding: 50,
     borderRadius: 5,
     marginTop: 65

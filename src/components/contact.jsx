@@ -64,13 +64,12 @@ export default class contact extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div
-        className={classNames(
-          classes.fullPageSection,
-          classes.smallWidth
-        )}
-      >
-        <div className={classNames(classes.sectionHeading, classes.marginBottom20)}>Contact</div>
+      <div className={classNames(classes.fullPageSection, classes.smallWidth)}>
+        <div
+          className={classNames(classes.sectionHeading, classes.marginBottom20)}
+        >
+          Contact
+        </div>
         <div style={{ color: '#2d2d2d', textAlign: 'center' }}>
           <div className={classes.careerDesc}>
             Proudly Serving Falls Church and Alexandria locations, 7 days a

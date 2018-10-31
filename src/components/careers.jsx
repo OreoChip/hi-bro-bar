@@ -32,8 +32,18 @@ export default class careers extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classNames(classes.fullPageSection, classes.smallWidth, classes.careersContainer)}>
-        <div className={classNames(classes.sectionHeading, classes.whiteHeading)}>Careers</div>
+      <div
+        className={classNames(
+          classes.fullPageSection,
+          classes.smallWidth,
+          classes.careersContainer
+        )}
+      >
+        <div
+          className={classNames(classes.sectionHeading, classes.whiteHeading)}
+        >
+          Careers
+        </div>
         <div style={{ color: 'white' }}>
           <div className={classes.careerDesc}>
             If you have passion for skin care, beauty, and facial treatment, we

@@ -60,7 +60,11 @@ export default class masthead extends Component {
     return (
       <div
         className={classNames(classes.icon, classes[option.className] || '')}
-        style={{ fontFamily: "'Rubik', sans-serif", fontSize: 43, color: option.color }}
+        style={{
+          fontFamily: "'Rubik', sans-serif",
+          fontSize: 43,
+          color: option.color
+        }}
       >
         {option.textSrc}
       </div>
