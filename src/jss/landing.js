@@ -270,11 +270,22 @@ const basicStyles = {
   }
 };
 
+const headerStyles = {
+  appBar: {
+    background: `${themes[currentTheme].invertedBgOpacity} !important`,
+    color: themes[currentTheme].invertedTextColor
+  },
+  brand: {
+    color: themes[currentTheme].invertedTextColor
+  }
+}
+
 export const styles = {
   ...basicStyles,
   ...slickStyles,
   ...mastHeadStyles,
   ...servicesStyles,
   ...careerStyles,
-  ...contactStyles
+  ...contactStyles,
+  ...headerStyles
 };

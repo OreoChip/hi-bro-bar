@@ -51,6 +51,7 @@ export default class Specials extends React.Component {
             label="Email Address"
             type="email"
             fullWidth
+            onChange={e => (this.emailAddress = e.target.value)}
           />
         </DialogContent>
         <DialogActions>
