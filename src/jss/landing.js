@@ -3,6 +3,29 @@ import image1 from 'assets/image1.jpg';
 import image2 from 'assets/image2.jpg';
 import image3 from 'assets/image3.jpg';
 
+const purple = {
+  invertedBg: '#8e8ef3',
+  invertedBgOpacity: '#8e8ef3cc',
+  invertedTextColor: '#ffffff'
+};
+
+const white = {
+  invertedBg: '#000000',
+  invertedBgOpacity: '#000000cc',
+  invertedTextColor: '#ffffff'
+};
+
+const themes = {
+  purple,
+  white
+};
+
+let currentTheme =  'purple';
+const themeString = window.location.search.replace('?theme=', '');
+if (themeString && themes[themeString]) {
+  currentTheme = themeString;
+}
+
 const slickStyles = {
   slick: {
     height: '600px',
@@ -56,7 +79,7 @@ const servicesStyles = {
 
 const careerStyles = {
   careersCard: {
-    background: '#8e8ef3',
+    background: themes[currentTheme].invertedBg,
     borderRadius: 0
   },
   careersContainer: {
@@ -76,6 +99,9 @@ const careerStyles = {
   },
   careersText: {
     marginBottom: 20
+  },
+  careersTextColor: {
+    color: themes[currentTheme].invertedTextColor
   }
 };
 
@@ -186,7 +212,7 @@ const basicStyles = {
     top: 100,
     left: '10%',
     color: 'white',
-    background: 'rgba(142, 142, 243, 0.8)',
+    background: themes[currentTheme].invertedBgOpacity,
     padding: 50,
     borderRadius: 5,
     marginTop: 65
@@ -199,7 +225,7 @@ const basicStyles = {
   },
   sectionHeading: {
     fontSize: 44,
-    color: '#8e8ef3',
+    color: themes[currentTheme].invertedBg,
     textAlign: 'center',
     marginTop: 50,
     marginBottom: 60,
