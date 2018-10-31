@@ -54,6 +54,8 @@ const locations = [
   }
 ];
 
+const locationsBold = { fontWeight: 900 };
+
 export default class contact extends Component {
   displayName = 'contact';
 
@@ -72,7 +74,8 @@ export default class contact extends Component {
         </div>
         <div style={{ color: '#2d2d2d', textAlign: 'center' }}>
           <div className={classes.careerDesc}>
-            Proudly Serving Falls Church and Alexandria locations, 7 days a
+            Proudly Serving <span style={locationsBold}>Falls Church</span> and{' '}
+            <span style={locationsBold}>Alexandria</span> locations, 7 days a
             week!
           </div>
           <div className={classes.locationContainer}>
