@@ -71,7 +71,7 @@ export default class contact extends Component {
         )}
       >
         <div className={classNames(classes.sectionHeading, classes.marginBottom20)}>Contact</div>
-        <div style={{ color: 'black', textAlign: 'center' }}>
+        <div style={{ color: '#2d2d2d', textAlign: 'center' }}>
           <div className={classes.careerDesc}>
             Proudly Serving Falls Church and Alexandria locations, 7 days a
             week!

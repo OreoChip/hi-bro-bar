@@ -43,7 +43,7 @@ const servicesStyles = {
     height: 200
   },
   servicePadded: {
-    paddingLeft: 20
+    paddingLeft: 10
   },
   textFont:{
     fontFamily: 'Alegreya Sans, sans-serif'
@@ -68,6 +68,7 @@ const careerStyles = {
     marginTop: 70
   },
   careerDesc: {
+    marginTop: -15,
     marginBottom: 50
   },
   careersHeading: {
@@ -184,8 +185,8 @@ const basicStyles = {
     position: 'absolute',
     top: 100,
     left: '10%',
-    color: 'black',
-    background: 'rgba(255, 255, 255, 0.60)',
+    color: 'white',
+    background: 'rgba(142, 142, 243, 0.9)',
     padding: 50,
     borderRadius: 5,
     marginTop: 65
@@ -198,7 +199,7 @@ const basicStyles = {
   },
   sectionHeading: {
     fontSize: 44,
-    color: 'gray',
+    color: '#8e8ef3',
     textAlign: 'center',
     marginTop: 50,
     marginBottom: 60,
@@ -208,7 +209,7 @@ const basicStyles = {
     marginBottom: '20px !important'
   },
   welcomeText: {
-    fontSize: 25
+    fontSize: 20
   },
   whiteHeading: {
     color: 'white'

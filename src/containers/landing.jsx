@@ -30,11 +30,16 @@ class Landing extends Component {
         Welcome to Hi Brow Bar
       </div>
       <div className={this.props.classes.welcomeText}>
-        Hi Brow Bar of Falls Church and Alexandria, offers the best services at
-        reasonable prices for your eyebrow threading, facial, waxing, beauty
-        treatments, and other needs. <br/> Our excellent staff and facility is proudly
-        serving customers for over 10 years. If you need special assistance, let
-        us know and we will happy to take care.
+        <div style={{ marginBottom: 10 }}>
+          Hi Brow Bar of Falls Church and Alexandria, offers the best services
+          at reasonable prices for your eyebrow threading, facial, waxing,
+          beauty treatments, and other needs.
+        </div>
+        <div>
+          Our excellent staff and facility is proudly serving customers for over
+          10 years. If you need special assistance, let us know and we will
+          happy to take care.
+        </div>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const cards = [
       { text: 'Chin', price: 8 },
       { text: 'Side Bum', price: 12 },
       { text: 'Full Face', price: 30 },
-      { text: ' - with neck (extra)', price: 6 }
+      { text: 'with neck (extra)', price: 6, extra: true }
     ]
   },
   {
