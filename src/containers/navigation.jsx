@@ -10,7 +10,7 @@ import Button from 'design-system/components/CustomButtons/Button.jsx';
 import navbarsStyle from 'design-system/assets/jss/material-kit-react/views/componentsSections/navbarsStyle.jsx';
 
 const navOptions = [
-  { text: 'Home', componentString: 'mastHead' },
+  { text: 'Home', componentString: 'home' },
   { text: 'Services', componentString: 'services' },
   {
     text: 'Specials',
@@ -48,7 +48,10 @@ class Navigation extends Component {
 
   renderBrand = classes => {
     return (
-      <div className={classes.brandContainter}>
+      <div
+        className={classes.brandContainter}
+        onClick={() => PubSub.publish('scrollTo', 'home')}
+      >
         <div className={classes.mainText}>Hi Brow Bar</div>
         <div className={classes.subText}>Threading, Facial, & Waxing Salon</div>
       </div>

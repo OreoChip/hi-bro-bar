@@ -62,7 +62,7 @@ class Landing extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div>
+      <div ref={c => (this.home = c)}>
         <Slider {...slickSettings}>
           <div className={classNames(classes.slick, classes.slick1)} />
           <div className={classNames(classes.slick, classes.slick2)} />
