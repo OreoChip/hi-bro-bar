@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';
-import withStyles from '@material-ui/core/styles/withStyles';
 import PubSub from 'pubsub-js';
 
 import Slider from 'react-slick';
@@ -10,8 +9,6 @@ import Services from 'components/services';
 import Careers from 'components/careers';
 import Contact from 'components/contact';
 import Specials from 'containers/specials';
-
-import { styles } from 'jss/landing';
 
 const slickSettings = {
   dots: false,
@@ -23,7 +20,7 @@ const slickSettings = {
   arrows: false
 };
 
-class Landing extends Component {
+export default class Landing extends Component {
   overlayText = (
     <div className={this.props.classes.headingText}>
       <div className={this.props.classes.welcomeHeading}>
@@ -111,5 +108,3 @@ class Landing extends Component {
     );
   }
 }
-
-export default withStyles(styles)(Landing);

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import withStyles from '@material-ui/core/styles/withStyles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -23,7 +25,13 @@ const navOptions = [
 ];
 
 class Navigation extends Component {
-  static propTypes = {};
+  static propTypes = {
+    customClasses: PropTypes.object
+  };
+
+  static defaultProps = {
+    customClasses: {}
+  };
 
   renderButton = (option, idx) => {
     return (
@@ -46,10 +54,10 @@ class Navigation extends Component {
     );
   };
 
-  renderBrand = classes => {
+  renderBrand = (classes, customClasses) => {
     return (
       <div
-        className={classes.brandContainter}
+        className={classNames(classes.brandContainter, customClasses.brand)}
         onClick={() => PubSub.publish('scrollTo', 'home')}
       >
         <div className={classes.mainText}>Hi Brow Bar</div>
@@ -59,10 +67,10 @@ class Navigation extends Component {
   };
 
   render() {
-    const { classes } = this.props;
+    const { classes, customClasses } = this.props;
     return (
       <Header
-        brand={this.renderBrand(classes)}
+        brand={this.renderBrand(classes, customClasses)}
         color="white"
         fixed
         bioRhyme
@@ -71,6 +79,7 @@ class Navigation extends Component {
             {navOptions.map(this.renderButton)}
           </List>
         }
+        customClasses={customClasses}
       />
     );
   }

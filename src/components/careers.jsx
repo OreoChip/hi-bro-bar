@@ -16,8 +16,21 @@ const options = [
   {
     heading: 'Waxing/ Cosmetologists Technician',
     texts: [
-      'Must know basic procedures for eyebrow and body waxing, makeup application, manicures, pedicures,\n' +
-        'and eyelash extensions.'
+      'Must know basic procedures for eyebrow and body waxing, eyebrow tinting, and facial.'
+    ]
+  },
+  {
+    texts: [
+      <div>
+        Please call us at (202) 492-4444, or (703) 618-4464; or{' '}
+        <a
+          href="mailto:raj.bhanot1@yahoo.com?subject=Interested to join Hi Brow Bar"
+          style={{ color: 'white' }}
+        >
+          email us
+        </a>
+        !
+      </div>
     ]
   }
 ];
