@@ -20,7 +20,10 @@ const slickSettings = {
   arrows: false
 };
 
+export const locationsBold = { fontWeight: 900, fontStyle: 'italic' };
+
 export default class Landing extends Component {
+
   overlayText = (
     <div className={this.props.classes.headingText}>
       <div className={this.props.classes.welcomeHeading}>
@@ -28,7 +31,7 @@ export default class Landing extends Component {
       </div>
       <div className={this.props.classes.welcomeText}>
         <div style={{ marginBottom: 10 }}>
-          Hi Brow Bar of Falls Church and Alexandria, offers the best services
+          Hi Brow Bar of <span style={locationsBold}>Falls Church</span> and <span style={locationsBold}>Alexandria</span>, offers the best services
           at reasonable prices for your eyebrow threading, facial, waxing,
           beauty treatments, and other needs.
         </div>

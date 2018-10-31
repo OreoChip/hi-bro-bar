@@ -39,6 +39,9 @@ const indigo = {
   invertedTextColor: '#ffffff',
   headingText: {
     right: '10%'
+  },
+  root: {
+    backgroundColor: '#e9ecff'
   }
 }
 
@@ -78,7 +81,7 @@ const mastHeadStyles = {
     color: 'rgba(0, 0, 0, 0.87)',
     fontSize: '18px',
     fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
-    fontWeight: '500',
+    fontWeight: '700',
     lineHeight: '1.6',
     letterSpacing: '0.0075em'
   }
@@ -97,7 +100,8 @@ const servicesStyles = {
     paddingLeft: 10
   },
   textFont: {
-    fontFamily: 'Alegreya Sans, sans-serif'
+    fontFamily: 'Alegreya Sans, sans-serif',
+    fontSize: '1.2rem'
   },
   servicesHeader: {
     fontFamily: 'Alegreya Sans, sans-serif',
@@ -280,6 +284,10 @@ const headerStyles = {
   }
 }
 
+const appStyles = {
+  root: themes[currentTheme].root || {}
+}
+
 export const styles = {
   ...basicStyles,
   ...slickStyles,
@@ -287,5 +295,6 @@ export const styles = {
   ...servicesStyles,
   ...careerStyles,
   ...contactStyles,
-  ...headerStyles
+  ...headerStyles,
+  ...appStyles
 };

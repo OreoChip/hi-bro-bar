@@ -16,7 +16,7 @@ import Typography from '@material-ui/core/Typography/Typography';
 const options = [
   {
     imgSrc: PeopleIcon,
-    heading: 'Experienced Specialists',
+    heading: 'Experienced Team',
     text: 'Technicians with 10+ years of experience',
     color: 'grey',
     onClick: () => PubSub.publish('scrollTo', 'services')
@@ -41,10 +41,10 @@ const options = [
   },
   {
     textSrc: '$10',
-    heading: 'Special',
-    text: '$10 eyebrow threading – everyday!',
+    text: 'Eyebrow threading – everyday!',
     color: '#e86c6c',
-    textStyle: { fontWeight: 900 }
+    textStyle: { fontWeight: 900, fontSize: '120%' },
+    cardStyle: { boxShadow: '5px 5px 58px #0a0a2f' }
   }
 ];
 
@@ -79,6 +79,7 @@ export default class masthead extends Component {
         className={this.props.classes.card}
         key={`card-${i}`}
         onClick={option.onClick || (() => {})}
+        style={option.cardStyle || {}}
       >
         <CardActionArea>
           <CardContent>

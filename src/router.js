@@ -9,9 +9,10 @@ import { styles } from './jss/landing'
 
 class RouterContainer extends Component {
   render() {
+    const { classes } = this.props;
     return (
       <Router>
-        <div>
+        <div className={classes.root}>
           <Navbar customClasses={this.props.classes} />
           <Switch>
             <Route path="/" component={props => <Landing {...props} classes={this.props.classes} />} />

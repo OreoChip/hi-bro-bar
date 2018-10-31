@@ -7,6 +7,12 @@ import classNames from 'classnames';
 
 const options = [
   {
+    texts: [
+      'If you have passion for skin care, beauty, and facial treatment, we are looking for you. Full-time or part-time, both types of opportunities are available. Contact us and be part of our ever-growing great team!'
+    ],
+    style: { marginBottom: 40 }
+  },
+  {
     heading: 'Threading Specialist',
     texts: [
       'Must have experience or know how to do eyebrow threading with a string.',
@@ -31,7 +37,8 @@ const options = [
         </a>
         !
       </div>
-    ]
+    ],
+    style: { marginTop: 40 }
   }
 ];
 
@@ -58,14 +65,8 @@ export default class careers extends Component {
           Careers
         </div>
         <div className={classes.careersTextColor}>
-          <div className={classes.careerDesc}>
-            If you have passion for skin care, beauty, and facial treatment, we
-            are looking for you. Full-time or part-time, both types of
-            opportunities are available. Contact us and be part of our
-            ever-growing great team!
-          </div>
           {options.map((option, i) => (
-            <React.Fragment>
+            <div style={option.style || {}}>
               <div
                 className={classes.careersHeading}
                 key={`careers-section-${i}`}
@@ -77,7 +78,7 @@ export default class careers extends Component {
                   <div key={`careers-section-${i}-${idx}`}>{text}</div>
                 ))}
               </div>
-            </React.Fragment>
+            </div>
           ))}
         </div>
       </div>
