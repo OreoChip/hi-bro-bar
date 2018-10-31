@@ -46,11 +46,20 @@ class Navigation extends Component {
     );
   };
 
+  renderBrand = classes => {
+    return (
+      <div className={classes.brandContainter}>
+        <div className={classes.mainText}>Hi Brow Bar</div>
+        <div className={classes.subText}>Threading, Facial, & Waxing Salon</div>
+      </div>
+    );
+  };
+
   render() {
     const { classes } = this.props;
     return (
       <Header
-        brand={'Hi Brow Bar'}
+        brand={this.renderBrand(classes)}
         color="white"
         fixed
         bioRhyme

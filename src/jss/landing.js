@@ -22,6 +22,14 @@ const slickStyles = {
 const mastHeadStyles = {
   mastheadContainer: {
     padding: '15px 0'
+  },
+  mastheadSectionHeading: {
+    color: 'rgba(0, 0, 0, 0.87)',
+    fontSize: '18px',
+    fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
+    fontWeight: '500',
+    lineHeight: '1.6',
+    letterSpacing: '0.0075em',
   }
 };
 
@@ -35,6 +43,13 @@ const servicesStyles = {
   },
   servicePadded: {
     paddingLeft: 20
+  },
+  textFont:{
+    fontFamily: 'Alegreya Sans, sans-serif'
+  },
+  servicesHeader:{
+    fontFamily: 'Alegreya Sans, sans-serif',
+    fontWeight: "bold"
   }
 };
 
@@ -170,7 +185,6 @@ const basicStyles = {
   },
   welcomeHeading: {
     marginTop: 0,
-    textTransform: 'uppercase',
     fontSize: 44,
     fontFamily: "'Tillana', cursive",
     fontWeight: 700
@@ -185,6 +199,9 @@ const basicStyles = {
   },
   marginBottom20: {
     marginBottom: '20px !important'
+  },
+  welcomeText: {
+    fontSize: 25
   }
 };
 
