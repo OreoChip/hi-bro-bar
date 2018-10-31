@@ -22,6 +22,14 @@ const slickStyles = {
 const mastHeadStyles = {
   mastheadContainer: {
     padding: '15px 0'
+  },
+  mastheadSectionHeading: {
+    color: 'rgba(0, 0, 0, 0.87)',
+    fontSize: '18px',
+    fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
+    fontWeight: '500',
+    lineHeight: '1.6',
+    letterSpacing: '0.0075em',
   }
 };
 

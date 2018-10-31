@@ -3,7 +3,6 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import PubSub from 'pubsub-js';
-import classNames from "classnames";
 
 import Header from 'design-system/components/Header/Header.jsx';
 import Button from 'design-system/components/CustomButtons/Button.jsx';
@@ -46,22 +45,21 @@ class Navigation extends Component {
       </ListItem>
     );
   };
-  renderBrand = (classes) => {
+
+  renderBrand = classes => {
     return (
-    <div className={classes.brandContainter}>
-      <div className={classes.mainText}>Hi Brow Bar</div>
-      <div className={classes.subText}>Threading, Facial, & Waxing Salon</div>
-    </div>
-    )
-  }
+      <div className={classes.brandContainter}>
+        <div className={classes.mainText}>Hi Brow Bar</div>
+        <div className={classes.subText}>Threading, Facial, & Waxing Salon</div>
+      </div>
+    );
+  };
 
   render() {
     const { classes } = this.props;
     return (
       <Header
-        brand={
-          this.renderBrand(classes)
-        }
+        brand={this.renderBrand(classes)}
         color="white"
         fixed
         bioRhyme

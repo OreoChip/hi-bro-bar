@@ -4,6 +4,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import PubSub from 'pubsub-js';
 import PeopleIcon from '@material-ui/icons/PeopleOutline';
 import ClockIcon from '@material-ui/icons/AccessTime';
 import LocationIcon from '@material-ui/icons/LocationOn';
@@ -15,32 +16,35 @@ import Typography from '@material-ui/core/Typography/Typography';
 const options = [
   {
     imgSrc: PeopleIcon,
-    heading: 'Experienced Team',
-    text: 'A team with 10+ years of experience',
-    className: 'experienceIcon'
+    heading: 'Experienced Specialists',
+    text: 'Technicians with 10+ years of experience',
+    className: 'experienceIcon',
+    onClick: () => PubSub.publish('scrollTo', 'services')
   },
   {
     imgSrc: ClockIcon,
-    heading: 'Timing',
+    heading: 'Timings',
     text: (
       <div>
-        10:00AM – 8:00PM (Mon-Sat)
-        <br /> 10:00AM – 6:00PM (Sunday)
+        10:00 AM – 8:00 PM (Mon-Sat)
+        <br /> 10:00 AM – 6:00 PM (Sunday)
       </div>
     ),
     className: 'clockIcon'
   },
   {
     imgSrc: LocationIcon,
-    heading: 'Location',
-    text: 'We are serving in Falls Church and Alexendria',
-    className: 'locationIcon'
+    heading: 'Locations',
+    text: 'Falls Church and Alexendria',
+    className: 'locationIcon',
+    onClick: () => PubSub.publish('scrollTo', 'contact')
   },
   {
-    textSrc: '10 $',
+    textSrc: '$10',
     heading: 'Special',
-    text: 'Our attraction is $10 eye brow threading',
-    className: 'specialIcon'
+    text: '$10 eyebrow threading – everyday!',
+    className: 'specialIcon',
+    textStyle: { fontWeight: 900 }
   }
 ];
 
@@ -67,7 +71,11 @@ export default class masthead extends Component {
     const Icon = option.imgSrc || null;
     const { classes } = this.props;
     return (
-      <Card className={this.props.classes.card} key={`card-${i}`}>
+      <Card
+        className={this.props.classes.card}
+        key={`card-${i}`}
+        onClick={option.onClick || (() => {})}
+      >
         <CardActionArea>
           <CardContent>
             {Icon ? (
@@ -80,10 +88,12 @@ export default class masthead extends Component {
             ) : (
               this.createText(option)
             )}
-            <Typography gutterBottom variant="h6" component="h4">
+            <div className={classes.mastheadSectionHeading}>
               {option.heading}
+            </div>
+            <Typography component="p">
+              <div style={option.textStyle || {}}>{option.text}</div>
             </Typography>
-            <Typography component="p">{option.text}</Typography>
           </CardContent>
         </CardActionArea>
       </Card>
