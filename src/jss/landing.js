@@ -36,6 +36,7 @@ const mastHeadStyles = {
 const servicesStyles = {
   services: {
     marginTop: 80,
+    marginBottom: 40,
     boxShadow: 'none'
   },
   serviceImage: {
@@ -54,6 +55,10 @@ const servicesStyles = {
 };
 
 const careerStyles = {
+  careersCard: {
+    background: '#8e8ef3',
+    borderRadius: 0
+  },
   careersContainer: {
     maxWidth: 700,
     margin: 'auto'
@@ -84,6 +89,9 @@ const contactStyles = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between'
+  },
+  contactContainer: {
+    paddingBottom: 50
   }
 };
 
@@ -110,8 +118,7 @@ const basicStyles = {
   mainRaised: {
     margin: '0px 70px 0px',
     borderRadius: '6px',
-    boxShadow:
-      '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)'
+    boxShadow: '0 0 10px 5px rgba(0, 0, 0, 0.14)'
   },
   topRaised: {
     marginTop: -60
@@ -193,7 +200,7 @@ const basicStyles = {
     fontSize: 44,
     color: 'gray',
     textAlign: 'center',
-    marginTop: 60,
+    marginTop: 50,
     marginBottom: 60,
     fontFamily: 'Montserrat Alternates, sans-serif'
   },
@@ -202,6 +209,9 @@ const basicStyles = {
   },
   welcomeText: {
     fontSize: 25
+  },
+  whiteHeading: {
+    color: 'white'
   }
 };
 

@@ -18,7 +18,7 @@ const options = [
     imgSrc: PeopleIcon,
     heading: 'Experienced Specialists',
     text: 'Technicians with 10+ years of experience',
-    className: 'experienceIcon',
+    color: 'grey',
     onClick: () => PubSub.publish('scrollTo', 'services')
   },
   {
@@ -30,20 +30,20 @@ const options = [
         <br /> 10:00 AM – 6:00 PM (Sunday)
       </div>
     ),
-    className: 'clockIcon'
+    color: '#70d470'
   },
   {
     imgSrc: LocationIcon,
     heading: 'Locations',
     text: 'Falls Church and Alexendria',
-    className: 'locationIcon',
+    color: '#8e8ef3',
     onClick: () => PubSub.publish('scrollTo', 'contact')
   },
   {
     textSrc: '$10',
     heading: 'Special',
     text: '$10 eyebrow threading – everyday!',
-    className: 'specialIcon',
+    color: '#e86c6c',
     textStyle: { fontWeight: 900 }
   }
 ];
@@ -60,7 +60,7 @@ export default class masthead extends Component {
     return (
       <div
         className={classNames(classes.icon, classes[option.className] || '')}
-        style={{ fontFamily: "'Rubik', sans-serif", fontSize: 43 }}
+        style={{ fontFamily: "'Rubik', sans-serif", fontSize: 43, color: option.color }}
       >
         {option.textSrc}
       </div>
@@ -80,10 +80,8 @@ export default class masthead extends Component {
           <CardContent>
             {Icon ? (
               <Icon
-                className={classNames(
-                  classes.icon,
-                  classes[option.className] || ''
-                )}
+                className={classNames(classes.icon)}
+                style={{ color: option.color }}
               />
             ) : (
               this.createText(option)

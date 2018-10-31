@@ -46,7 +46,6 @@ class Landing extends Component {
 
   componentWillMount() {
     this.scrollSubs = PubSub.subscribe('scrollTo', (topic, componentString) => {
-      debugger;
       this.scrollTo(this[componentString]);
     });
   }
@@ -67,39 +66,40 @@ class Landing extends Component {
         {this.overlayText}
         <div
           className={classNames(
-            this.props.classes.main,
-            this.props.classes.mainRaised,
-            this.props.classes.topRaised
+            classes.main,
+            classes.mainRaised,
+            classes.topRaised
           )}
           ref={c => (this.mastHead = c)}
         >
-          <div className={classNames(this.props.classes.container)}>
-            <MastHead classes={this.props.classes} />
+          <div className={classNames(classes.container)}>
+            <MastHead classes={classes} />
           </div>
         </div>
         <div
-          className={classNames(this.props.classes.container)}
+          className={classNames(classes.container)}
           ref={c => (this.services = c)}
         >
-          <Services classes={this.props.classes} />
+          <Services classes={classes} />
         </div>
         <div
           className={classNames(
-            this.props.classes.main,
-            this.props.classes.mainRaised,
-            this.props.classes.raisedFull
+            classes.main,
+            classes.mainRaised,
+            classes.raisedFull,
+            classes.careersCard
           )}
           ref={c => (this.careers = c)}
         >
-          <div className={classNames(this.props.classes.container)}>
-            <Careers classes={this.props.classes} />
+          <div className={classNames(classes.container)}>
+            <Careers classes={classes} />
           </div>
         </div>
         <div
-          className={classNames(this.props.classes.container)}
+          className={classNames(classes.container, classes.contactContainer)}
           ref={c => (this.contact = c)}
         >
-          <Contact classes={this.props.classes} />
+          <Contact classes={classes} />
         </div>
         <Specials />
       </div>

@@ -33,8 +33,8 @@ export default class careers extends Component {
     const { classes } = this.props;
     return (
       <div className={classNames(classes.fullPageSection, classes.smallWidth, classes.careersContainer)}>
-        <div className={classes.sectionHeading}>Careers</div>
-        <div style={{ color: 'black' }}>
+        <div className={classNames(classes.sectionHeading, classes.whiteHeading)}>Careers</div>
+        <div style={{ color: 'white' }}>
           <div className={classes.careerDesc}>
             If you have passion for skin care, beauty, and facial treatment, we
             are looking for you. Full-time or part-time, both types of
