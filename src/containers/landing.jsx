@@ -27,14 +27,19 @@ class Landing extends Component {
   overlayText = (
     <div className={this.props.classes.headingText}>
       <div className={this.props.classes.welcomeHeading}>
-        HI Brow Threading Solution
+        Welcome to Hi Brow Bar
       </div>
-      <div>
-        Hi Brow Bar of Falls Church and Alexandria, offers the best services at
-        reasonable prices for your eyebrow threading, facial, waxing, beauty
-        treatments, and other needs. Our excellent staff and facility is proudly
-        serving customers for over 10 years. If you need special assistance, let
-        us know and we will happy to take care.
+      <div className={this.props.classes.welcomeText}>
+        <div style={{ marginBottom: 10 }}>
+          Hi Brow Bar of Falls Church and Alexandria, offers the best services
+          at reasonable prices for your eyebrow threading, facial, waxing,
+          beauty treatments, and other needs.
+        </div>
+        <div>
+          Our excellent staff and facility is proudly serving customers for over
+          10 years. If you need special assistance, let us know and we will
+          happy to take care.
+        </div>
       </div>
     </div>
   );
@@ -46,7 +51,6 @@ class Landing extends Component {
 
   componentWillMount() {
     this.scrollSubs = PubSub.subscribe('scrollTo', (topic, componentString) => {
-      debugger;
       this.scrollTo(this[componentString]);
     });
   }
@@ -58,7 +62,7 @@ class Landing extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div>
+      <div ref={c => (this.home = c)}>
         <Slider {...slickSettings}>
           <div className={classNames(classes.slick, classes.slick1)} />
           <div className={classNames(classes.slick, classes.slick2)} />
@@ -67,41 +71,42 @@ class Landing extends Component {
         {this.overlayText}
         <div
           className={classNames(
-            this.props.classes.main,
-            this.props.classes.mainRaised,
-            this.props.classes.topRaised
+            classes.main,
+            classes.mainRaised,
+            classes.topRaised
           )}
           ref={c => (this.mastHead = c)}
         >
-          <div className={classNames(this.props.classes.container)}>
-            <MastHead classes={this.props.classes} />
+          <div className={classNames(classes.container)}>
+            <MastHead classes={classes} />
           </div>
         </div>
         <div
-          className={classNames(this.props.classes.container)}
+          className={classNames(classes.container)}
           ref={c => (this.services = c)}
         >
-          <Services classes={this.props.classes} />
+          <Services classes={classes} />
         </div>
         <div
           className={classNames(
-            this.props.classes.main,
-            this.props.classes.mainRaised,
-            this.props.classes.raisedFull
+            classes.main,
+            classes.mainRaised,
+            classes.raisedFull,
+            classes.careersCard
           )}
           ref={c => (this.careers = c)}
         >
-          <div className={classNames(this.props.classes.container)}>
-            <Careers classes={this.props.classes} />
+          <div className={classNames(classes.container)}>
+            <Careers classes={classes} />
           </div>
         </div>
         <div
-          className={classNames(this.props.classes.container)}
+          className={classNames(classes.container, classes.contactContainer)}
           ref={c => (this.contact = c)}
         >
-          <Contact classes={this.props.classes} />
+          <Contact classes={classes} />
         </div>
-        <Specials/>
+        <Specials />
       </div>
     );
   }

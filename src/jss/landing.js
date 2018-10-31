@@ -22,23 +22,43 @@ const slickStyles = {
 const mastHeadStyles = {
   mastheadContainer: {
     padding: '15px 0'
+  },
+  mastheadSectionHeading: {
+    color: 'rgba(0, 0, 0, 0.87)',
+    fontSize: '18px',
+    fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
+    fontWeight: '500',
+    lineHeight: '1.6',
+    letterSpacing: '0.0075em'
   }
 };
 
 const servicesStyles = {
   services: {
     marginTop: 80,
+    marginBottom: 40,
     boxShadow: 'none'
   },
   serviceImage: {
     height: 200
   },
   servicePadded: {
-    paddingLeft: 20
+    paddingLeft: 10
+  },
+  textFont: {
+    fontFamily: 'Alegreya Sans, sans-serif'
+  },
+  servicesHeader: {
+    fontFamily: 'Alegreya Sans, sans-serif',
+    fontWeight: 'bold'
   }
 };
 
 const careerStyles = {
+  careersCard: {
+    background: '#8e8ef3',
+    borderRadius: 0
+  },
   careersContainer: {
     maxWidth: 700,
     margin: 'auto'
@@ -48,6 +68,7 @@ const careerStyles = {
     marginTop: 70
   },
   careerDesc: {
+    marginTop: -15,
     marginBottom: 50
   },
   careersHeading: {
@@ -69,6 +90,9 @@ const contactStyles = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between'
+  },
+  contactContainer: {
+    paddingBottom: 50
   }
 };
 
@@ -95,8 +119,7 @@ const basicStyles = {
   mainRaised: {
     margin: '0px 70px 0px',
     borderRadius: '6px',
-    boxShadow:
-      '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)'
+    boxShadow: '0 0 10px 5px rgba(0, 0, 0, 0.14)'
   },
   topRaised: {
     marginTop: -60
@@ -162,29 +185,34 @@ const basicStyles = {
     position: 'absolute',
     top: 100,
     left: '10%',
-    color: 'black',
-    background: 'rgba(255, 255, 255, 0.60)',
+    color: 'white',
+    background: 'rgba(142, 142, 243, 0.8)',
     padding: 50,
     borderRadius: 5,
     marginTop: 65
   },
   welcomeHeading: {
     marginTop: 0,
-    textTransform: 'uppercase',
     fontSize: 44,
     fontFamily: "'Tillana', cursive",
     fontWeight: 700
   },
   sectionHeading: {
     fontSize: 44,
-    color: 'gray',
+    color: '#8e8ef3',
     textAlign: 'center',
-    marginTop: 60,
+    marginTop: 50,
     marginBottom: 60,
     fontFamily: 'Montserrat Alternates, sans-serif'
   },
   marginBottom20: {
     marginBottom: '20px !important'
+  },
+  welcomeText: {
+    fontSize: 20
+  },
+  whiteHeading: {
+    color: 'white'
   }
 };
 

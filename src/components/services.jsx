@@ -8,6 +8,7 @@ import CardActionArea from '@material-ui/core/CardActionArea/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia/CardMedia';
 import CardContent from '@material-ui/core/CardContent/CardContent';
 import Typography from '@material-ui/core/Typography/Typography';
+import classNames from 'classnames';
 
 import image1 from 'assets/threading.jpg';
 import image2 from 'assets/waxing.jpg';
@@ -25,7 +26,7 @@ const cards = [
       { text: 'Chin', price: 8 },
       { text: 'Side Bum', price: 12 },
       { text: 'Full Face', price: 30 },
-      { text: ' - with neck (extra)', price: 6 }
+      { text: 'with neck (extra)', price: 6, extra: true }
     ]
   },
   {
@@ -77,20 +78,40 @@ export default class services extends Component {
     return (
       <CardActionArea>
         <CardContent>
-          <Typography gutterBottom variant="h6" component="h4">
+          <Typography
+            className={classes.servicesHeader}
+            gutterBottom
+            variant="h6"
+            component="h4"
+          >
             {option.heading}
           </Typography>
           {option.options.map((optionDesc, idx) => {
             return (
-              <div style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between'
-              }}>
-                <Typography key={`block-${i}-${idx}-text`} className={optionDesc.extra ? classes.servicePadded : ''}>{optionDesc.text}</Typography>
-                <Typography key={`block-${i}-${idx}-price`}>${optionDesc.price}</Typography>
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  justifyContent: 'space-between'
+                }}
+              >
+                <Typography
+                  key={`block-${i}-${idx}-text`}
+                  className={classNames(
+                    classes.textFont,
+                    optionDesc.extra ? classes.servicePadded : ''
+                  )}
+                >
+                  {optionDesc.text}
+                </Typography>
+                <Typography
+                  key={`block-${i}-${idx}-price`}
+                  className={classes.textFont}
+                >
+                  ${optionDesc.price}
+                </Typography>
               </div>
-            )
+            );
           })}
         </CardContent>
       </CardActionArea>
