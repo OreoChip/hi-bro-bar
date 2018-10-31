@@ -2,22 +2,50 @@ import { container } from 'design-system/assets/jss/material-kit-react';
 import image1 from 'assets/image1.jpg';
 import image2 from 'assets/image2.jpg';
 import image3 from 'assets/image3.jpg';
+import image1Purple from 'assets/image1-purple.jpg';
+import image2Purple from 'assets/image2-purple.jpg';
+import image3Purple from 'assets/image3-purple.jpg';
 
 const purple = {
+  image1: image1Purple,
+  image2: image2Purple,
+  image3: image3Purple,
   invertedBg: '#8e8ef3',
   invertedBgOpacity: '#8e8ef3cc',
-  invertedTextColor: '#ffffff'
+  invertedTextColor: '#ffffff',
+  headingText: {
+    right: '10%'
+  }
 };
 
 const white = {
+  image1,
+  image2,
+  image3,
   invertedBg: '#000000',
   invertedBgOpacity: '#000000cc',
-  invertedTextColor: '#ffffff'
+  invertedTextColor: '#ffffff',
+  headingText: {
+    left: '10%'
+  }
 };
+
+const indigo = {
+  image1: image1Purple,
+  image2: image2Purple,
+  image3: image3Purple,
+  invertedBg: '#0a0a2f',
+  invertedBgOpacity: '#0a0a2fcc',
+  invertedTextColor: '#ffffff',
+  headingText: {
+    right: '10%'
+  }
+}
 
 const themes = {
   purple,
-  white
+  white,
+  indigo
 };
 
 let currentTheme =  'purple';
@@ -32,13 +60,13 @@ const slickStyles = {
     backgroundSize: '100% 100%'
   },
   slick1: {
-    background: `url(${image1})`
+    background: `url(${themes[currentTheme].image1})`
   },
   slick2: {
-    background: `url(${image2})`
+    background: `url(${themes[currentTheme].image2})`
   },
   slick3: {
-    background: `url(${image3})`
+    background: `url(${themes[currentTheme].image3})`
   }
 };
 
@@ -210,12 +238,12 @@ const basicStyles = {
     width: '50%',
     position: 'absolute',
     top: 100,
-    left: '10%',
     color: 'white',
     background: themes[currentTheme].invertedBgOpacity,
     padding: 50,
     borderRadius: 5,
-    marginTop: 65
+    marginTop: 65,
+    ...themes[currentTheme].headingText
   },
   welcomeHeading: {
     marginTop: 0,
