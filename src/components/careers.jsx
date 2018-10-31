@@ -44,7 +44,7 @@ export default class careers extends Component {
         >
           Careers
         </div>
-        <div style={{ color: 'white' }}>
+        <div className={classes.careersTextColor}>
           <div className={classes.careerDesc}>
             If you have passion for skin care, beauty, and facial treatment, we
             are looking for you. Full-time or part-time, both types of
