@@ -41,8 +41,7 @@ export default class Specials extends React.Component {
         <DialogTitle id="form-dialog-title">Specials</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            No Special Offers at this time. To receive updates on new offers,
-            please enter your email address here.
+            No Special Offers at this time. To receive updates on new offers, please enter your email address here, or feel free to call us.
           </DialogContentText>
           <TextField
             autoFocus

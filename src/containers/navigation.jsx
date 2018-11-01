@@ -47,7 +47,7 @@ class Navigation extends Component {
         }}
         key={`nav-${idx}`}
       >
-        <Button className={this.props.classes.navLink} color="transparent">
+        <Button className={classNames(this.props.classes.navLink, this.props.classes.hiBrowFontSize)} color="transparent">
           {option.text}
         </Button>
       </ListItem>

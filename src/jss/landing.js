@@ -267,7 +267,7 @@ const basicStyles = {
     marginBottom: '20px !important'
   },
   welcomeText: {
-    fontSize: 20
+    fontSize: 23
   },
   whiteHeading: {
     color: 'white'
