@@ -59,8 +59,11 @@ if (themeString && themes[themeString]) {
 
 const slickStyles = {
   slick: {
-    height: '700px',
-    backgroundSize: '100% 100%!important'
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover !important',
+    height: '100vh',
+    width: '100vw !important'
   },
   slick1: {
     background: `url(${themes[currentTheme].image1})`
