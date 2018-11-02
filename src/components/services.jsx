@@ -10,13 +10,13 @@ import CardContent from '@material-ui/core/CardContent/CardContent';
 import Typography from '@material-ui/core/Typography/Typography';
 import classNames from 'classnames';
 
-import image1 from 'assets/threading.jpg';
+import threading1 from 'assets/threading1.jpg';
 import image2 from 'assets/waxing.jpg';
 import image3 from 'assets/facial.jpg';
 
 const cards = [
   {
-    img: image1,
+    img: threading1,
     heading: 'Threading',
     options: [
       { text: 'Eye Brow Threading', price: 10 },

@@ -13,14 +13,14 @@ const options = [
     style: { marginBottom: 40 }
   },
   {
-    heading: 'Threading Specialist',
+    heading: 'Threading Specialists',
     texts: [
       'Must have experience or know how to do eyebrow threading with a string.',
       'If you have basic experience, we are open to train you.'
     ]
   },
   {
-    heading: 'Waxing/ Cosmetologists Technician',
+    heading: 'Waxing/ Cosmetologists Technicians',
     texts: [
       'Must know basic procedures for eyebrow and body waxing, eyebrow tinting, and facial.'
     ]

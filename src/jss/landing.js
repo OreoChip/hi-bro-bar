@@ -2,9 +2,9 @@ import { container } from 'design-system/assets/jss/material-kit-react';
 import image1 from 'assets/image1.jpg';
 import image2 from 'assets/image2.jpg';
 import image3 from 'assets/image3.jpg';
-import image1Purple from 'assets/image1-purple.jpg';
-import image2Purple from 'assets/image2-purple.jpg';
-import image3Purple from 'assets/image3-purple.jpg';
+import image1Purple from 'assets/mainBack1.jpg';
+import image2Purple from 'assets/mainBack2.jpg';
+import image3Purple from 'assets/mainBack3.jpg';
 
 const purple = {
   image1: image1Purple,
@@ -59,8 +59,8 @@ if (themeString && themes[themeString]) {
 
 const slickStyles = {
   slick: {
-    height: '600px',
-    backgroundSize: '100% 100%'
+    height: '700px',
+    backgroundSize: '100% 100%!important'
   },
   slick1: {
     background: `url(${themes[currentTheme].image1})`
@@ -267,7 +267,7 @@ const basicStyles = {
     marginBottom: '20px !important'
   },
   welcomeText: {
-    fontSize: 20
+    fontSize: 23
   },
   whiteHeading: {
     color: 'white'

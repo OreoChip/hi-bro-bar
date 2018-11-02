@@ -5,9 +5,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const locations = [
+const locationsAndTimings = [
   {
-    location: 'Falls Church',
+    title: 'Falls Church',
     address: (
       <div>
         3817-D, S George Mason Drive
@@ -30,7 +30,16 @@ const locations = [
     )
   },
   {
-    location: 'Alexandria',
+    title: 'Timings',
+    timing: (
+      <div>
+        10:00 AM – 8:00 PM (Mon-Sat)
+          <br /> 10:00 AM – 6:00 PM (Sunday)
+        </div>
+    ),
+  },
+  {
+    title: 'Alexandria',
     address: (
       <div>
         510-A, S Van Dorn Street
@@ -79,13 +88,13 @@ export default class contact extends Component {
             week!
           </div>
           <div className={classes.locationContainer}>
-            {locations.map((location, i) => (
+            {locationsAndTimings.map((location, i) => (
               <div key={`contact-section-${i}`}>
                 <div className={classes.careersHeading}>
-                  {location.location}
+                  {location.title}
                 </div>
-                <div className={classes.careersText}>{location.address}</div>
-                <div className={classes.map}>{location.iframe}</div>
+                <div className={classes.careersText}>{ location.address ? location.address : location.timing }</div>
+                {location.iframe ? <div className={classes.map}>{location.iframe}</div> : null}
               </div>
             ))}
           </div>

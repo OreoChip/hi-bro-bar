@@ -19,6 +19,7 @@ const options = [
     heading: 'Experienced Team',
     text: 'Technicians with 10+ years of experience',
     color: 'grey',
+    textStyle: { fontSize: "0.92rem" },
     onClick: () => PubSub.publish('scrollTo', 'services')
   },
   {
@@ -30,13 +31,15 @@ const options = [
         <br /> 10:00 AM – 6:00 PM (Sunday)
       </div>
     ),
+    textStyle: { fontSize: "0.92rem" },
     color: '#70d470'
   },
   {
     imgSrc: LocationIcon,
     heading: 'Locations',
-    text: 'Falls Church and Alexendria',
+    text: 'Falls Church and Alexandria',
     color: '#8e8ef3',
+    textStyle: { fontSize: "0.92rem" },
     onClick: () => PubSub.publish('scrollTo', 'contact')
   },
   {
