@@ -19,7 +19,7 @@ const options = [
     heading: 'Experienced Team',
     text: 'Technicians with 10+ years of experience',
     color: 'grey',
-    textStyle: { fontSize: "0.92rem" },
+    textStyle: { fontSize: '0.92rem' },
     onClick: () => PubSub.publish('scrollTo', 'services')
   },
   {
@@ -31,7 +31,7 @@ const options = [
         <br /> 10:00 AM – 6:00 PM (Sunday)
       </div>
     ),
-    textStyle: { fontSize: "0.92rem" },
+    textStyle: { fontSize: '0.92rem' },
     color: '#70d470'
   },
   {
@@ -39,7 +39,7 @@ const options = [
     heading: 'Locations',
     text: 'Falls Church and Alexandria',
     color: '#8e8ef3',
-    textStyle: { fontSize: "0.92rem" },
+    textStyle: { fontSize: '0.92rem' },
     onClick: () => PubSub.publish('scrollTo', 'contact')
   },
   {
@@ -78,31 +78,40 @@ export default class masthead extends Component {
     const Icon = option.imgSrc || null;
     const { classes } = this.props;
     return (
-      <Card
-        className={this.props.classes.card}
-        key={`card-${i}`}
-        onClick={option.onClick || (() => {})}
-        style={option.cardStyle || {}}
+      <div
+        className={classNames(
+          'col-lg-3',
+          'col-md-6',
+          'col-xs-12',
+          classes.cardPadding
+        )}
       >
-        <CardActionArea>
-          <CardContent>
-            {Icon ? (
-              <Icon
-                className={classNames(classes.icon)}
-                style={{ color: option.color }}
-              />
-            ) : (
-              this.createText(option)
-            )}
-            <div className={classes.mastheadSectionHeading}>
-              {option.heading}
-            </div>
-            <Typography component="p">
-              <div style={option.textStyle || {}}>{option.text}</div>
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
+        <Card
+          className={classNames(classes.card)}
+          key={`card-${i}`}
+          onClick={option.onClick || (() => {})}
+          style={option.cardStyle || {}}
+        >
+          <CardActionArea>
+            <CardContent>
+              {Icon ? (
+                <Icon
+                  className={classNames(classes.icon)}
+                  style={{ color: option.color }}
+                />
+              ) : (
+                this.createText(option)
+              )}
+              <div className={classes.mastheadSectionHeading}>
+                {option.heading}
+              </div>
+              <Typography component="p">
+                <div style={option.textStyle || {}}>{option.text}</div>
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </div>
     );
   };
 
@@ -112,7 +121,10 @@ export default class masthead extends Component {
       <div
         className={classNames(
           classes.cardsContainer,
-          classes.mastheadContainer
+          classes.mastheadContainer,
+          'row',
+          'flex-row',
+          'flex-wrap'
         )}
       >
         {options.map(this.renderCard)}

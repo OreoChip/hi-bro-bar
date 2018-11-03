@@ -34,9 +34,9 @@ const locationsAndTimings = [
     timing: (
       <div>
         10:00 AM – 8:00 PM (Mon-Sat)
-          <br /> 10:00 AM – 6:00 PM (Sunday)
-        </div>
-    ),
+        <br /> 10:00 AM – 6:00 PM (Sunday)
+      </div>
+    )
   },
   {
     title: 'Alexandria',
@@ -75,7 +75,7 @@ export default class contact extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classNames(classes.fullPageSection, classes.smallWidth)}>
+      <div className={classNames(classes.fullPageSection)}>
         <div
           className={classNames(classes.sectionHeading, classes.marginBottom20)}
         >
@@ -87,14 +87,30 @@ export default class contact extends Component {
             <span style={locationsBold}>Alexandria</span> locations, 7 days a
             week!
           </div>
-          <div className={classes.locationContainer}>
+          <div
+            className={classNames(
+              classes.locationContainer,
+              'row',
+              'flex-row',
+              'flex-wrap'
+            )}
+          >
             {locationsAndTimings.map((location, i) => (
-              <div key={`contact-section-${i}`}>
-                <div className={classes.careersHeading}>
-                  {location.title}
+              <div
+                key={`contact-section-${i}`}
+                className={classNames(
+                  'col-lg-4',
+                  'col-xs-12',
+                  classes.contactColWrapper
+                )}
+              >
+                <div className={classes.careersHeading}>{location.title}</div>
+                <div className={classes.careersText}>
+                  {location.address ? location.address : location.timing}
                 </div>
-                <div className={classes.careersText}>{ location.address ? location.address : location.timing }</div>
-                {location.iframe ? <div className={classes.map}>{location.iframe}</div> : null}
+                {location.iframe ? (
+                  <div className={classes.map}>{location.iframe}</div>
+                ) : null}
               </div>
             ))}
           </div>

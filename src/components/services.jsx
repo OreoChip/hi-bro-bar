@@ -121,12 +121,14 @@ export default class services extends Component {
   renderCard = (option, i) => {
     const { classes } = this.props;
     return (
-      <Card className={classes.cardServices} key={`card-${i}`}>
-        <CardMedia image={option.img} className={classes.serviceImage} />
-        {option.sections
-          ? option.sections.map(this.renderBlock)
-          : this.renderBlock(option, i)}
-      </Card>
+      <div className={classNames('col-lg-4', 'col-xs-12', classes.cardPadding)}>
+        <Card className={classes.cardServices} key={`card-${i}`}>
+          <CardMedia image={option.img} className={classes.serviceImage} />
+          {option.sections
+            ? option.sections.map(this.renderBlock)
+            : this.renderBlock(option, i)}
+        </Card>
+      </div>
     );
   };
 
@@ -135,7 +137,14 @@ export default class services extends Component {
     return (
       <div className={classes.services}>
         <div className={classes.sectionHeading}>Services</div>
-        <div className={classes.cardsContainer}>
+        <div
+          className={classNames(
+            classes.cardsContainer,
+            'row',
+            'flex-row',
+            'flex-wrap'
+          )}
+        >
           {cards.map(this.renderCard)}
         </div>
       </div>
