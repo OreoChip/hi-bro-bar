@@ -218,12 +218,16 @@ const basicStyles = {
   card: {
     boxSizing: 'border-box',
     textAlign: 'center',
-    height: '100%'
+    height: '100%',
+    maxWidth: 300,
+    margin: 'auto'
   },
   cardServices: {
     boxSizing: 'border-box',
     textAlign: 'center',
-    height: '100%'
+    height: '100%',
+    maxWidth: 400,
+    margin: 'auto'
   },
   icon: {
     color: '#000',
