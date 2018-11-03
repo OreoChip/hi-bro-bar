@@ -55,7 +55,6 @@ export default class careers extends Component {
       <div
         className={classNames(
           classes.fullPageSection,
-          classes.smallWidth,
           classes.careersContainer
         )}
       >

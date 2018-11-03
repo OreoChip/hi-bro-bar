@@ -43,7 +43,7 @@ const indigo = {
   root: {
     backgroundColor: '#e9ecff'
   }
-}
+};
 
 const themes = {
   purple,
@@ -51,7 +51,7 @@ const themes = {
   indigo
 };
 
-let currentTheme =  'purple';
+let currentTheme = 'purple';
 const themeString = window.location.search.replace('?theme=', '');
 if (themeString && themes[themeString]) {
   currentTheme = themeString;
@@ -87,6 +87,9 @@ const mastHeadStyles = {
     fontWeight: '700',
     lineHeight: '1.6',
     letterSpacing: '0.0075em'
+  },
+  cardPadding: {
+    padding: 20
   }
 };
 
@@ -142,10 +145,14 @@ const careerStyles = {
 
 const contactStyles = {
   contact: {},
+  contactColWrapper: {
+    marginBottom: 50
+  },
   map: {
     height: 200,
     width: 300,
-    boxShadow: '3px 5px 5px #888888'
+    boxShadow: '3px 5px 5px #888888',
+    margin: 'auto'
   },
   locationContainer: {
     display: 'flex',
@@ -167,10 +174,6 @@ const basicStyles = {
     color: '#FFFFFF',
     padding: 20,
     ...container
-  },
-  smallWidth: {
-    paddingLeft: 100,
-    paddingRight: 100
   },
   main: {
     background: '#FFFFFF',
@@ -213,16 +216,14 @@ const basicStyles = {
     justifyContent: 'center'
   },
   card: {
-    width: '25%',
-    margin: 20,
     boxSizing: 'border-box',
-    textAlign: 'center'
+    textAlign: 'center',
+    height: '100%'
   },
   cardServices: {
-    width: '33%',
-    margin: 20,
     boxSizing: 'border-box',
-    textAlign: 'center'
+    textAlign: 'center',
+    height: '100%'
   },
   icon: {
     color: '#000',
@@ -254,7 +255,7 @@ const basicStyles = {
   },
   welcomeHeading: {
     marginTop: 0,
-    fontSize: 44,
+    fontSize: 37,
     fontFamily: "'Tillana', cursive",
     fontWeight: 700
   },
@@ -285,11 +286,11 @@ const headerStyles = {
   brand: {
     color: themes[currentTheme].invertedTextColor
   }
-}
+};
 
 const appStyles = {
   root: themes[currentTheme].root || {}
-}
+};
 
 export const styles = {
   ...basicStyles,

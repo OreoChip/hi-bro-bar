@@ -61,7 +61,7 @@ class Navigation extends Component {
         onClick={() => PubSub.publish('scrollTo', 'home')}
       >
         <div className={classes.mainText}>Hi Brow Bar</div>
-        <div className={classes.subText}>Threading, Facial, & Waxing Salon</div>
+        <div className={classNames(classes.subText, 'd-none', 'd-md-block')}>Threading, Facial, & Waxing Salon</div>
       </div>
     );
   };

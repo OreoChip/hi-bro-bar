@@ -23,17 +23,17 @@ const slickSettings = {
 export const locationsBold = { fontWeight: 900, fontStyle: 'italic' };
 
 export default class Landing extends Component {
-
   overlayText = (
-    <div className={this.props.classes.headingText}>
+    <div className={classNames(this.props.classes.headingText, 'd-none', 'd-lg-block')}>
       <div className={this.props.classes.welcomeHeading}>
         Welcome to Hi Brow Bar
       </div>
-      <div className={this.props.classes.welcomeText}>
+      <div className={classNames(this.props.classes.welcomeText, 'd-none', 'd-lg-block')}>
         <div style={{ marginBottom: 10 }}>
-          Hi Brow Bar of <span style={locationsBold}>Falls Church</span> and <span style={locationsBold}>Alexandria</span>, offers the best services
-          at reasonable prices for your eyebrow threading, facial, waxing,
-          beauty treatments, and other needs.
+          Hi Brow Bar of <span style={locationsBold}>Falls Church</span> and{' '}
+          <span style={locationsBold}>Alexandria</span>, offers the best
+          services at reasonable prices for your eyebrow threading, facial,
+          waxing, beauty treatments, and other needs.
         </div>
         <div>
           Our excellent staff and facility is proudly serving customers for over
