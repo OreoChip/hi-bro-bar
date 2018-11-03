@@ -1,10 +1,10 @@
 {
   "main.css": "/hi-bro-bar/static/css/main.eef946ab.chunk.css",
-  "main.js": "/hi-bro-bar/static/js/main.f588a306.chunk.js",
-  "main.js.map": "/hi-bro-bar/static/js/main.f588a306.chunk.js.map",
-  "static/css/1.60993f62.chunk.css": "/hi-bro-bar/static/css/1.60993f62.chunk.css",
-  "static/js/1.0d88924f.chunk.js": "/hi-bro-bar/static/js/1.0d88924f.chunk.js",
-  "static/js/1.0d88924f.chunk.js.map": "/hi-bro-bar/static/js/1.0d88924f.chunk.js.map",
+  "main.js": "/hi-bro-bar/static/js/main.31da0003.chunk.js",
+  "main.js.map": "/hi-bro-bar/static/js/main.31da0003.chunk.js.map",
+  "static/css/1.f9210d53.chunk.css": "/hi-bro-bar/static/css/1.f9210d53.chunk.css",
+  "static/js/1.526d6d29.chunk.js": "/hi-bro-bar/static/js/1.526d6d29.chunk.js",
+  "static/js/1.526d6d29.chunk.js.map": "/hi-bro-bar/static/js/1.526d6d29.chunk.js.map",
   "runtime~main.js": "/hi-bro-bar/static/js/runtime~main.1dbba8ad.js",
   "runtime~main.js.map": "/hi-bro-bar/static/js/runtime~main.1dbba8ad.js.map",
   "static/media/all.css": "/hi-bro-bar/static/media/fa-solid-900.3f759796.svg",
@@ -18,8 +18,8 @@
   "static/media/image3.jpg": "/hi-bro-bar/static/media/image3.22a62e5a.jpg",
   "static/media/mainBack2.jpg": "/hi-bro-bar/static/media/mainBack2.e8fbfd9a.jpg",
   "static/css/main.eef946ab.chunk.css.map": "/hi-bro-bar/static/css/main.eef946ab.chunk.css.map",
-  "static/css/1.60993f62.chunk.css.map": "/hi-bro-bar/static/css/1.60993f62.chunk.css.map",
+  "static/css/1.f9210d53.chunk.css.map": "/hi-bro-bar/static/css/1.f9210d53.chunk.css.map",
   "index.html": "/hi-bro-bar/index.html",
-  "precache-manifest.2ec4125a9625033d8ff0b8481a5591f2.js": "/hi-bro-bar/precache-manifest.2ec4125a9625033d8ff0b8481a5591f2.js",
+  "precache-manifest.85535ecfb5851c8d584b00767031ba89.js": "/hi-bro-bar/precache-manifest.85535ecfb5851c8d584b00767031ba89.js",
   "service-worker.js": "/hi-bro-bar/service-worker.js"
 }
