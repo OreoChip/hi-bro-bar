@@ -2798,6 +2798,12 @@ email-addresses@^3.0.1:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/email-addresses/-/email-addresses-3.0.2.tgz#a31280d19baf86669840a0aa45be1d7f6e7df315"
 
+emailjs-com@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/emailjs-com/-/emailjs-com-2.2.4.tgz#0c5b1c3aeb9c4f3d3eedb64fd7d95ab108944a50"
+  dependencies:
+    promise-polyfill "7.1.0"
+
 emoji-regex@^6.5.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-6.5.1.tgz#9baea929b155565c11ea41c6626eaa65cef992c2"
@@ -6777,6 +6783,10 @@ progress@^2.0.0:
 promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
+
+promise-polyfill@7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-7.1.0.tgz#4d749485b44577c14137591c6f36e5d7e2dd3378"
 
 promise@8.0.2:
   version "8.0.2"
