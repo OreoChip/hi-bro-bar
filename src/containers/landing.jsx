@@ -17,18 +17,30 @@ const slickSettings = {
   autoplay: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
+  arrows: false
 };
 
 export const locationsBold = { fontWeight: 900, fontStyle: 'italic' };
 
 export default class Landing extends Component {
   overlayText = (
-    <div className={classNames(this.props.classes.headingText, 'd-none', 'd-lg-block')}>
+    <div
+      className={classNames(
+        this.props.classes.headingText,
+        'd-none',
+        'd-lg-block'
+      )}
+    >
       <div className={this.props.classes.welcomeHeading}>
         Welcome to Hi Brow Bar
       </div>
-      <div className={classNames(this.props.classes.welcomeText, 'd-none', 'd-lg-block')}>
+      <div
+        className={classNames(
+          this.props.classes.welcomeText,
+          'd-none',
+          'd-lg-block'
+        )}
+      >
         <div style={{ marginBottom: 10 }}>
           Hi Brow Bar of <span style={locationsBold}>Falls Church</span> and{' '}
           <span style={locationsBold}>Alexandria</span>, offers the best
@@ -106,7 +118,7 @@ export default class Landing extends Component {
         >
           <Contact classes={classes} />
         </div>
-        <Specials/> 
+        <Specials />
       </div>
     );
   }
