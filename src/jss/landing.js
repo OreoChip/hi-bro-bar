@@ -181,7 +181,7 @@ const basicStyles = {
     zIndex: '3'
   },
   mainRaised: {
-    margin: '0px 70px 0px',
+    margin: '0px 6% 0px',
     borderRadius: '6px',
     boxShadow: '0 0 10px 5px rgba(0, 0, 0, 0.14)'
   },

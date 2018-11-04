@@ -17,7 +17,7 @@ const slickSettings = {
   autoplay: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false
+  arrows: false,
 };
 
 export const locationsBold = { fontWeight: 900, fontStyle: 'italic' };
@@ -106,7 +106,7 @@ export default class Landing extends Component {
         >
           <Contact classes={classes} />
         </div>
-        <Specials />
+        <Specials/> 
       </div>
     );
   }
