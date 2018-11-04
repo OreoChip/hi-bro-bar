@@ -2,9 +2,9 @@ import { container } from 'design-system/assets/jss/material-kit-react';
 import image1 from 'assets/image1.jpg';
 import image2 from 'assets/image2.jpg';
 import image3 from 'assets/image3.jpg';
-import image1Purple from 'assets/mainBack1.jpg';
-import image2Purple from 'assets/mainBack2.jpg';
-import image3Purple from 'assets/mainBack3.jpg';
+import image1Purple from 'assets/salon.jpg';
+import image2Purple from 'assets/lady1.jpg';
+import image3Purple from 'assets/lady2.jpg';
 
 const purple = {
   image1: image1Purple,

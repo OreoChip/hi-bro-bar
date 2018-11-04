@@ -10,7 +10,7 @@ import CardContent from '@material-ui/core/CardContent/CardContent';
 import Typography from '@material-ui/core/Typography/Typography';
 import classNames from 'classnames';
 
-import threading1 from 'assets/threading1.jpg';
+import threading1 from 'assets/threadingFi.jpg';
 import image2 from 'assets/waxing.jpg';
 import image3 from 'assets/facial.jpg';
 
