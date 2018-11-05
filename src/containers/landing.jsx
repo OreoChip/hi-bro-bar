@@ -14,7 +14,7 @@ const slickSettings = {
   dots: false,
   infinite: true,
   speed: 500,
-  autoplay: false,
+  autoplay: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false
@@ -26,9 +26,7 @@ export default class Landing extends Component {
   overlayText = (
     <div
       className={classNames(
-        this.props.classes.headingText,
-        'd-none',
-        'd-lg-block'
+        this.props.classes.headingText
       )}
     >
       <div className={this.props.classes.welcomeHeading}>
@@ -36,9 +34,7 @@ export default class Landing extends Component {
       </div>
       <div
         className={classNames(
-          this.props.classes.welcomeText,
-          'd-none',
-          'd-lg-block'
+          this.props.classes.welcomeText
         )}
       >
         <div style={{ marginBottom: 10 }}>
@@ -75,7 +71,7 @@ export default class Landing extends Component {
     const { classes } = this.props;
     return (
       <div ref={c => (this.home = c)}>
-        <Slider {...slickSettings}>
+        <Slider {...slickSettings} className={classes.slickContainer}>
           <div className={classNames(classes.slick, classes.slick1)} />
           <div className={classNames(classes.slick, classes.slick2)} />
           <div className={classNames(classes.slick, classes.slick3)} />

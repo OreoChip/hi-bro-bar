@@ -1,15 +1,12 @@
 import { container } from 'design-system/assets/jss/material-kit-react';
-import image1 from 'assets/image1.jpg';
-import image2 from 'assets/image2.jpg';
-import image3 from 'assets/image3.jpg';
-import image1Purple from 'assets/salon.jpg';
-import image2Purple from 'assets/lady1.jpg';
-import image3Purple from 'assets/lady2.jpg';
+import image1 from 'assets/production/image1.jpg';
+import image2 from 'assets/production/image2.jpg';
+import image3 from 'assets/production/image3.jpg';
 
 const purple = {
-  image1: image1Purple,
-  image2: image2Purple,
-  image3: image3Purple,
+  image1,
+  image2,
+  image3,
   invertedBg: '#8e8ef3',
   invertedBgOpacity: '#8e8ef3cc',
   invertedTextColor: '#ffffff',
@@ -31,9 +28,9 @@ const white = {
 };
 
 const indigo = {
-  image1: image1Purple,
-  image2: image2Purple,
-  image3: image3Purple,
+  image1,
+  image2,
+  image3,
   invertedBg: '#0a0a2f',
   invertedBgOpacity: '#0a0a2fcc',
   invertedTextColor: '#ffffff',
@@ -58,6 +55,22 @@ if (themeString && themes[themeString]) {
 }
 
 const slickStyles = {
+  slickContainer: {
+    '@media (min-width: 992px)': {
+      height: 700,
+    },
+    '@media (max-width: 991px) and (min-width: 700px)': {
+      height: 500,
+    },
+    '@media (max-width: 699px) and (min-width: 400px)': {
+      height: 300,
+      marginTop: 70
+    },
+    '@media (max-width: 399px)': {
+      height: 200,
+      marginTop: 70
+    }
+  },
   slick: {
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -69,10 +82,10 @@ const slickStyles = {
       height: 500,
     },
     '@media (max-width: 699px) and (min-width: 400px)': {
-      height: 300,
+      height: 300
     },
     '@media (max-width: 399px)': {
-      height: 200,
+      height: 200
     }
   },
   slick1: {
@@ -257,16 +270,29 @@ const basicStyles = {
     color: 'grey'
   },
   headingText: {
-    width: '50%',
-    position: 'absolute',
-    top: 100,
-    color: 'white',
-    background: themes[currentTheme].invertedBg,
-    opacity: 0.8,
-    padding: 50,
-    borderRadius: 5,
-    marginTop: 65,
-    ...themes[currentTheme].headingText
+    "@media (min-width: 992px)": {
+      width: '50%',
+      position: 'absolute',
+      top: 100,
+      color: 'white',
+      background: themes[currentTheme].invertedBg,
+      opacity: 0.8,
+      padding: 50,
+      borderRadius: 5,
+      marginTop: 65,
+      ...themes[currentTheme].headingText
+    },
+    "@media (max-width: 991px)":{
+      width: '100%',
+      top: 100,
+      color: 'white',
+      background: themes[currentTheme].invertedBg,
+      opacity: 0.8,
+      padding: 30,
+      borderRadius: 5,
+      paddingBottom: 75,
+      ...themes[currentTheme].headingText
+    }
   },
   welcomeHeading: {
     marginTop: 0,
