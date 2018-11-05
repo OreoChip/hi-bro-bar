@@ -181,7 +181,7 @@ const basicStyles = {
     zIndex: '3'
   },
   mainRaised: {
-    margin: '0px 70px 0px',
+    margin: '0px 6% 0px',
     borderRadius: '6px',
     boxShadow: '0 0 10px 5px rgba(0, 0, 0, 0.14)'
   },
@@ -251,7 +251,8 @@ const basicStyles = {
     position: 'absolute',
     top: 100,
     color: 'white',
-    background: themes[currentTheme].invertedBgOpacity,
+    background: themes[currentTheme].invertedBg,
+    opacity: 0.8,
     padding: 50,
     borderRadius: 5,
     marginTop: 65,
@@ -284,7 +285,8 @@ const basicStyles = {
 
 const headerStyles = {
   appBar: {
-    background: `${themes[currentTheme].invertedBgOpacity} !important`,
+    background: `${themes[currentTheme].invertedBg} !important`,
+    opacity: 0.8,
     color: themes[currentTheme].invertedTextColor
   },
   brand: {
