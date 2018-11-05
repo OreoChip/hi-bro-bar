@@ -70,9 +70,11 @@ const slickStyles = {
     },
     '@media (max-width: 699px) and (min-width: 400px)': {
       height: 300,
+      marginTop: 70
     },
     '@media (max-width: 399px)': {
       height: 200,
+      marginTop: 70
     }
   },
   slick1: {
