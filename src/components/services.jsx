@@ -10,13 +10,13 @@ import CardContent from '@material-ui/core/CardContent/CardContent';
 import Typography from '@material-ui/core/Typography/Typography';
 import classNames from 'classnames';
 
-import threading1 from 'assets/threadingFi.jpg';
-import image2 from 'assets/waxing.jpg';
-import image3 from 'assets/facial.jpg';
+import threading from 'assets/threading.jpg';
+import wax from 'assets/wax.jpg';
+import facial from 'assets/facial.jpg';
 
 const cards = [
   {
-    img: threading1,
+    img: threading,
     heading: 'Threading',
     options: [
       { text: 'Eye Brow Threading', price: 10 },
@@ -30,7 +30,7 @@ const cards = [
     ]
   },
   {
-    img: image2,
+    img: wax,
     heading: 'Wax',
     options: [
       { text: 'Under Arm', price: 10 },
@@ -45,7 +45,7 @@ const cards = [
     ]
   },
   {
-    img: image3,
+    img: facial,
     sections: [
       {
         heading: 'Facials',

@@ -2,14 +2,11 @@ import { container } from 'design-system/assets/jss/material-kit-react';
 import image1 from 'assets/image1.jpg';
 import image2 from 'assets/image2.jpg';
 import image3 from 'assets/image3.jpg';
-import image1Purple from 'assets/salon.jpg';
-import image2Purple from 'assets/lady1.jpg';
-import image3Purple from 'assets/lady2.jpg';
 
 const purple = {
-  image1: image1Purple,
-  image2: image2Purple,
-  image3: image3Purple,
+  image1,
+  image2,
+  image3,
   invertedBg: '#8e8ef3',
   invertedBgOpacity: '#8e8ef3cc',
   invertedTextColor: '#ffffff',
@@ -31,9 +28,9 @@ const white = {
 };
 
 const indigo = {
-  image1: image1Purple,
-  image2: image2Purple,
-  image3: image3Purple,
+  image1,
+  image2,
+  image3,
   invertedBg: '#0a0a2f',
   invertedBgOpacity: '#0a0a2fcc',
   invertedTextColor: '#ffffff',
