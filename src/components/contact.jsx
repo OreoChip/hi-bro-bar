@@ -7,6 +7,16 @@ import classNames from 'classnames';
 
 const locationsAndTimings = [
   {
+    title: 'Timings',
+    timing: (
+      <div>
+        10:00 AM – 8:00 PM (Mon-Sat)
+        <br /> 10:00 AM – 6:00 PM (Sunday)
+      </div>
+    ),
+    classes: 'col-lg-12 d-lg-none'
+  },
+  {
     title: 'Falls Church',
     address: (
       <div>
@@ -27,7 +37,8 @@ const locationsAndTimings = [
         style={{ border: 0, width: '100%', height: '100%' }}
         allowFullScreen
       />
-    )
+    ),
+    classes: 'col-lg-4 col-xs-12'
   },
   {
     title: 'Timings',
@@ -36,7 +47,8 @@ const locationsAndTimings = [
         10:00 AM – 8:00 PM (Mon-Sat)
         <br /> 10:00 AM – 6:00 PM (Sunday)
       </div>
-    )
+    ),
+    classes: 'col-lg-4 col-xs-12 d-none d-lg-block'
   },
   {
     title: 'Alexandria',
@@ -59,7 +71,8 @@ const locationsAndTimings = [
         style={{ border: 0, width: '100%', height: '100%' }}
         allowFullScreen
       />
-    )
+    ),
+    classes: 'col-lg-4 col-xs-12'
   }
 ];
 
@@ -99,8 +112,7 @@ export default class contact extends Component {
               <div
                 key={`contact-section-${i}`}
                 className={classNames(
-                  'col-lg-4',
-                  'col-xs-12',
+                  location.classes,
                   classes.contactColWrapper
                 )}
               >
