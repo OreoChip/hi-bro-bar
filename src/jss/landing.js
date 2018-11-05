@@ -58,10 +58,7 @@ if (themeString && themes[themeString]) {
 }
 
 const slickStyles = {
-  slick: {
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: '100% !important',
+  slickContainer: {
     '@media (min-width: 992px)': {
       height: 700,
     },
@@ -75,6 +72,23 @@ const slickStyles = {
     '@media (max-width: 399px)': {
       height: 200,
       marginTop: 70
+    }
+  },
+  slick: {
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100% !important',
+    '@media (min-width: 992px)': {
+      height: 700,
+    },
+    '@media (max-width: 991px) and (min-width: 700px)': {
+      height: 500,
+    },
+    '@media (max-width: 699px) and (min-width: 400px)': {
+      height: 300
+    },
+    '@media (max-width: 399px)': {
+      height: 200
     }
   },
   slick1: {

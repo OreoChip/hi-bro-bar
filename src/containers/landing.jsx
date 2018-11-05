@@ -75,7 +75,7 @@ export default class Landing extends Component {
     const { classes } = this.props;
     return (
       <div ref={c => (this.home = c)}>
-        <Slider {...slickSettings}>
+        <Slider {...slickSettings} className={classes.slickContainer}>
           <div className={classNames(classes.slick, classes.slick1)} />
           <div className={classNames(classes.slick, classes.slick2)} />
           <div className={classNames(classes.slick, classes.slick3)} />
