@@ -257,16 +257,29 @@ const basicStyles = {
     color: 'grey'
   },
   headingText: {
-    width: '50%',
-    position: 'absolute',
-    top: 100,
-    color: 'white',
-    background: themes[currentTheme].invertedBg,
-    opacity: 0.8,
-    padding: 50,
-    borderRadius: 5,
-    marginTop: 65,
-    ...themes[currentTheme].headingText
+    "@media (min-width: 992px)": {
+      width: '50%',
+      position: 'absolute',
+      top: 100,
+      color: 'white',
+      background: themes[currentTheme].invertedBg,
+      opacity: 0.8,
+      padding: 50,
+      borderRadius: 5,
+      marginTop: 65,
+      ...themes[currentTheme].headingText
+    },
+    "@media (max-width: 991px)":{
+      width: '100%',
+      top: 100,
+      color: 'white',
+      background: themes[currentTheme].invertedBg,
+      opacity: 0.8,
+      padding: 30,
+      borderRadius: 5,
+      paddingBottom: 75,
+      ...themes[currentTheme].headingText
+    }
   },
   welcomeHeading: {
     marginTop: 0,
