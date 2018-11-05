@@ -13,7 +13,7 @@ code {
 }
 
 .slick-slide {
-  height: 600px !important
+  /*max-height: 600px !important*/
 }
 
 .slick-slider {

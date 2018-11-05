@@ -61,9 +61,8 @@ const slickStyles = {
   slick: {
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover !important',
-    height: '100vh',
-    width: '100vw !important'
+    backgroundSize: '100% !important',
+    height: '700px',
   },
   slick1: {
     background: `url(${themes[currentTheme].image2})`
