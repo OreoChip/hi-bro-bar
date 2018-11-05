@@ -66,10 +66,10 @@ const slickStyles = {
     width: '100vw !important'
   },
   slick1: {
-    background: `url(${themes[currentTheme].image1})`
+    background: `url(${themes[currentTheme].image2})`
   },
   slick2: {
-    background: `url(${themes[currentTheme].image2})`
+    background: `url(${themes[currentTheme].image1})`
   },
   slick3: {
     background: `url(${themes[currentTheme].image3})`
