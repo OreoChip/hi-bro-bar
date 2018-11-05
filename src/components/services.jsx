@@ -10,9 +10,9 @@ import CardContent from '@material-ui/core/CardContent/CardContent';
 import Typography from '@material-ui/core/Typography/Typography';
 import classNames from 'classnames';
 
-import threading from 'assets/threading.jpg';
-import wax from 'assets/wax.jpg';
-import facial from 'assets/facial.jpg';
+import threading from 'assets/production/threading.jpg';
+import wax from 'assets/production/wax.jpg';
+import facial from 'assets/production/facial.jpg';
 
 const cards = [
   {
