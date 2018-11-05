@@ -8,7 +8,7 @@ import classNames from 'classnames';
 const options = [
   {
     texts: [
-      'If you have passion for skin care, beauty, and facial treatment, we are looking for you. Full-time or part-time, both types of opportunities are available. Contact us and be part of our ever-growing great team!'
+      'If you have passion for skin care, beauty, and facial treatment, we are looking for you. Full-time and part-time opportunities are available. Contact us and be part of our ever-growing great team!'
     ],
     style: { marginBottom: 40 }
   },
