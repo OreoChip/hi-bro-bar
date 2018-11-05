@@ -251,7 +251,8 @@ const basicStyles = {
     position: 'absolute',
     top: 100,
     color: 'white',
-    background: themes[currentTheme].invertedBgOpacity,
+    background: themes[currentTheme].invertedBg,
+    opacity: 0.8,
     padding: 50,
     borderRadius: 5,
     marginTop: 65,
@@ -284,7 +285,8 @@ const basicStyles = {
 
 const headerStyles = {
   appBar: {
-    background: `${themes[currentTheme].invertedBgOpacity} !important`,
+    background: `${themes[currentTheme].invertedBg} !important`,
+    opacity: 0.8,
     color: themes[currentTheme].invertedTextColor
   },
   brand: {
