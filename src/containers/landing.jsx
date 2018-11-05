@@ -14,7 +14,7 @@ const slickSettings = {
   dots: false,
   infinite: true,
   speed: 500,
-  autoplay: true,
+  autoplay: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false

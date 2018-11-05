@@ -38,6 +38,7 @@ class Navigation extends Component {
       <ListItem
         className={this.props.classes.listItem}
         onClick={e => {
+          PubSub.publish('close-menu-drawer');
           if (option.onClick) {
             option.onClick(e);
           } else {
@@ -47,7 +48,13 @@ class Navigation extends Component {
         }}
         key={`nav-${idx}`}
       >
-        <Button className={classNames(this.props.classes.navLink, this.props.classes.hiBrowFontSize)} color="transparent">
+        <Button
+          className={classNames(
+            this.props.classes.navLink,
+            this.props.classes.hiBrowFontSize
+          )}
+          color="transparent"
+        >
           {option.text}
         </Button>
       </ListItem>
@@ -61,7 +68,9 @@ class Navigation extends Component {
         onClick={() => PubSub.publish('scrollTo', 'home')}
       >
         <div className={classes.mainText}>Hi Brow Bar</div>
-        <div className={classNames(classes.subText, 'd-none', 'd-md-block')}>Threading, Facial, & Waxing Salon</div>
+        <div className={classNames(classes.subText, 'd-none', 'd-md-block')}>
+          Threading, Facial, & Waxing Salon
+        </div>
       </div>
     );
   };

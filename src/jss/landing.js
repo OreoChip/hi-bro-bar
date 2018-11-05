@@ -2,9 +2,9 @@ import { container } from 'design-system/assets/jss/material-kit-react';
 import image1 from 'assets/image1.jpg';
 import image2 from 'assets/image2.jpg';
 import image3 from 'assets/image3.jpg';
-import image1Purple from 'assets/mainBack1.jpg';
-import image2Purple from 'assets/mainBack2.jpg';
-import image3Purple from 'assets/mainBack3.jpg';
+import image1Purple from 'assets/salon.jpg';
+import image2Purple from 'assets/lady1.jpg';
+import image3Purple from 'assets/lady2.jpg';
 
 const purple = {
   image1: image1Purple,
@@ -61,15 +61,25 @@ const slickStyles = {
   slick: {
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover !important',
-    height: '100vh',
-    width: '100vw !important'
+    backgroundSize: '100% !important',
+    '@media (min-width: 992px)': {
+      height: 700,
+    },
+    '@media (max-width: 991px) and (min-width: 700px)': {
+      height: 500,
+    },
+    '@media (max-width: 699px) and (min-width: 400px)': {
+      height: 300,
+    },
+    '@media (max-width: 399px)': {
+      height: 200,
+    }
   },
   slick1: {
-    background: `url(${themes[currentTheme].image1})`
+    background: `url(${themes[currentTheme].image2})`
   },
   slick2: {
-    background: `url(${themes[currentTheme].image2})`
+    background: `url(${themes[currentTheme].image1})`
   },
   slick3: {
     background: `url(${themes[currentTheme].image3})`

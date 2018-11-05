@@ -12,10 +12,6 @@ code {
     monospace;
 }
 
-.slick-slide {
-  height: 600px !important
-}
-
 .slick-slider {
   box-shadow: 0 10px 13px rgba(0, 0, 0, 0.4)
 }
