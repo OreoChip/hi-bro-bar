@@ -26,9 +26,7 @@ export default class Landing extends Component {
   overlayText = (
     <div
       className={classNames(
-        this.props.classes.headingText,
-        'd-none',
-        'd-lg-block'
+        this.props.classes.headingText
       )}
     >
       <div className={this.props.classes.welcomeHeading}>
@@ -36,9 +34,7 @@ export default class Landing extends Component {
       </div>
       <div
         className={classNames(
-          this.props.classes.welcomeText,
-          'd-none',
-          'd-lg-block'
+          this.props.classes.welcomeText
         )}
       >
         <div style={{ marginBottom: 10 }}>
