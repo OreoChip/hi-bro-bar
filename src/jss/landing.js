@@ -70,7 +70,7 @@ const slickHeightConstraints = (container = false) => ({
   },
   '@media (max-width: 399px)': {
     maxHeight: 200,
-    marginTop: 70
+    marginTop: container ? 0 : 70
   }
 })
 
