@@ -1,7 +1,7 @@
 {
   "main.css": "/hi-bro-bar/static/css/main.cc27303d.chunk.css",
-  "main.js": "/hi-bro-bar/static/js/main.a21dadf2.chunk.js",
-  "main.js.map": "/hi-bro-bar/static/js/main.a21dadf2.chunk.js.map",
+  "main.js": "/hi-bro-bar/static/js/main.737f6a0f.chunk.js",
+  "main.js.map": "/hi-bro-bar/static/js/main.737f6a0f.chunk.js.map",
   "static/css/1.6ddaa4f8.chunk.css": "/hi-bro-bar/static/css/1.6ddaa4f8.chunk.css",
   "static/js/1.df5ad1d3.chunk.js": "/hi-bro-bar/static/js/1.df5ad1d3.chunk.js",
   "static/js/1.df5ad1d3.chunk.js.map": "/hi-bro-bar/static/js/1.df5ad1d3.chunk.js.map",
@@ -17,6 +17,6 @@
   "static/css/main.cc27303d.chunk.css.map": "/hi-bro-bar/static/css/main.cc27303d.chunk.css.map",
   "static/css/1.6ddaa4f8.chunk.css.map": "/hi-bro-bar/static/css/1.6ddaa4f8.chunk.css.map",
   "index.html": "/hi-bro-bar/index.html",
-  "precache-manifest.a504e2c671a18d3f4cc8ce2ec76afa66.js": "/hi-bro-bar/precache-manifest.a504e2c671a18d3f4cc8ce2ec76afa66.js",
+  "precache-manifest.ae2b2c9bf4a15e5e8774bec8eb3eb698.js": "/hi-bro-bar/precache-manifest.ae2b2c9bf4a15e5e8774bec8eb3eb698.js",
   "service-worker.js": "/hi-bro-bar/service-worker.js"
 }
