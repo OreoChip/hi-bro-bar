@@ -1,13 +1,13 @@
 {
   "main.css": "/hi-bro-bar/static/css/main.cc27303d.chunk.css",
-  "main.js": "/hi-bro-bar/static/js/main.737f6a0f.chunk.js",
-  "main.js.map": "/hi-bro-bar/static/js/main.737f6a0f.chunk.js.map",
+  "main.js": "/hi-bro-bar/static/js/main.2077f5d5.chunk.js",
+  "main.js.map": "/hi-bro-bar/static/js/main.2077f5d5.chunk.js.map",
   "static/css/1.6ddaa4f8.chunk.css": "/hi-bro-bar/static/css/1.6ddaa4f8.chunk.css",
   "static/js/1.df5ad1d3.chunk.js": "/hi-bro-bar/static/js/1.df5ad1d3.chunk.js",
   "static/js/1.df5ad1d3.chunk.js.map": "/hi-bro-bar/static/js/1.df5ad1d3.chunk.js.map",
   "runtime~main.js": "/hi-bro-bar/static/js/runtime~main.1dbba8ad.js",
   "runtime~main.js.map": "/hi-bro-bar/static/js/runtime~main.1dbba8ad.js.map",
-  "static/media/all.css": "/hi-bro-bar/static/media/fa-brands-400.3f4d4ad4.svg",
+  "static/media/all.css": "/hi-bro-bar/static/media/fa-brands-400.a31c9674.eot",
   "static/media/threading.jpg": "/hi-bro-bar/static/media/threading.62ad52f8.jpg",
   "static/media/facial.jpg": "/hi-bro-bar/static/media/facial.d6aae472.jpg",
   "static/media/image1.jpg": "/hi-bro-bar/static/media/image1.a64eb929.jpg",
@@ -17,6 +17,6 @@
   "static/css/main.cc27303d.chunk.css.map": "/hi-bro-bar/static/css/main.cc27303d.chunk.css.map",
   "static/css/1.6ddaa4f8.chunk.css.map": "/hi-bro-bar/static/css/1.6ddaa4f8.chunk.css.map",
   "index.html": "/hi-bro-bar/index.html",
-  "precache-manifest.c413e47a6bd410d744bb75bbc10c2efc.js": "/hi-bro-bar/precache-manifest.c413e47a6bd410d744bb75bbc10c2efc.js",
+  "precache-manifest.bab46af0028f44c7587ffd67eda8d79d.js": "/hi-bro-bar/precache-manifest.bab46af0028f44c7587ffd67eda8d79d.js",
   "service-worker.js": "/hi-bro-bar/service-worker.js"
 }
