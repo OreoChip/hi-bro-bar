@@ -269,7 +269,7 @@ const basicStyles = {
   },
   headingText: {
     "@media (min-width: 992px)": {
-      width: '50%',
+      width: '40%',
       position: 'absolute',
       top: 100,
       color: 'white',
