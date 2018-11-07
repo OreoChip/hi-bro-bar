@@ -28,6 +28,7 @@ class RouterContainer extends Component {
               { icon: 'fas fa-at', url: 'mailto:raj.bhanot1@yahoo.com' }
             ]}
             rightText={"© 2018 Hi Brow Bar"}
+            rightLink={{text: "Coresoft USA", url: "http://coresoftsolutions.com"}}
             customClasses={this.props.classes}
           />
         </div>
