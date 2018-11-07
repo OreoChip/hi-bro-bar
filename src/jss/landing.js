@@ -1,24 +1,29 @@
 import { container } from 'design-system/assets/jss/material-kit-react';
-import image1 from 'assets/production/image1.jpg';
-import image2 from 'assets/production/image2.jpg';
-import image3 from 'assets/production/image3.jpg';
+import image1 from 'assets/desktop/image1.jpg';
+import image2 from 'assets/desktop/image2.jpg';
+import image3 from 'assets/desktop/image3.jpg';
+import mobileImage1 from 'assets/mobile/image1.jpg';
+import mobileImage2 from 'assets/mobile/image2.jpg';
+import mobileImage3 from 'assets/mobile/image3.jpg';
+
+const assets = {
+  image1: window.innerWidth < 991 ? mobileImage1 : image1,
+  image2: window.innerWidth < 991 ? mobileImage2 : image2,
+  image3: window.innerWidth < 991 ? mobileImage3 : image3
+}
 
 const purple = {
-  image1,
-  image2,
-  image3,
+  ...assets,
   invertedBg: '#8e8ef3',
   invertedBgOpacity: '#8e8ef3cc',
   invertedTextColor: '#ffffff',
   headingText: {
-    right: '10%'
+    right: '6%'
   }
 };
 
 const white = {
-  image1,
-  image2,
-  image3,
+  ...assets,
   invertedBg: '#000000',
   invertedBgOpacity: '#000000cc',
   invertedTextColor: '#ffffff',
@@ -28,9 +33,7 @@ const white = {
 };
 
 const indigo = {
-  image1,
-  image2,
-  image3,
+  ...assets,
   invertedBg: '#0a0a2f',
   invertedBgOpacity: '#0a0a2fcc',
   invertedTextColor: '#ffffff',
@@ -54,39 +57,34 @@ if (themeString && themes[themeString]) {
   currentTheme = themeString;
 }
 
+const slickHeightConstraints = (container = false) => ({
+  '@media (min-width: 992px)': {
+    maxHeight: 700,
+  },
+  '@media (max-width: 991px) and (min-width: 700px)': {
+    maxHeight: 500,
+  },
+  '@media (max-width: 699px) and (min-width: 400px)': {
+    maxHeight: 300,
+    marginTop: container ? 0 : 70
+  },
+  '@media (max-width: 399px)': {
+    maxHeight: 200,
+    marginTop: container ? 0 : 70
+  }
+})
+
 const slickStyles = {
   slickContainer: {
-    '@media (min-width: 992px)': {
-      height: 700,
-    },
-    '@media (max-width: 991px) and (min-width: 700px)': {
-      height: 500,
-    },
-    '@media (max-width: 699px) and (min-width: 400px)': {
-      height: 300,
-      marginTop: 70
-    },
-    '@media (max-width: 399px)': {
-      height: 200,
-      marginTop: 70
-    }
+    ...slickHeightConstraints(true)
   },
   slick: {
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '100% !important',
-    '@media (min-width: 992px)': {
-      height: 700,
-    },
-    '@media (max-width: 991px) and (min-width: 700px)': {
-      height: 500,
-    },
-    '@media (max-width: 699px) and (min-width: 400px)': {
-      height: 300
-    },
-    '@media (max-width: 399px)': {
-      height: 200
-    }
+    backgroundSize: 'cover !important',
+    height: '100vh',
+    width: '100vw !important',
+    ...slickHeightConstraints(false)
   },
   slick1: {
     background: `url(${themes[currentTheme].image2})`
@@ -271,7 +269,7 @@ const basicStyles = {
   },
   headingText: {
     "@media (min-width: 992px)": {
-      width: '50%',
+      width: '40%',
       position: 'absolute',
       top: 100,
       color: 'white',
@@ -292,6 +290,9 @@ const basicStyles = {
       borderRadius: 5,
       paddingBottom: 75,
       ...themes[currentTheme].headingText
+    },
+    '@media (max-width: 700px)': {
+      marginTop: 70
     }
   },
   welcomeHeading: {
