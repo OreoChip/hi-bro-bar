@@ -2,7 +2,7 @@
   "name": "hi-bro-bar",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://oreochip.github.com/hi-bro-bar/",
+  "homepage": "https://www.psrai.in",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.4.2",
     "@material-ui/core": "^3.3.0",
