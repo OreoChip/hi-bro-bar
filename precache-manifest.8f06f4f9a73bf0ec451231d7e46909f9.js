@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "eef6051639f95300dbf0293ad216c6b0",
-    "url": "/hi-bro-bar/static/media/fa-brands-400.eef60516.woff"
+    "revision": "a1ad865c38582677d91b",
+    "url": "/hi-bro-bar/static/css/main.cc27303d.chunk.css"
   },
   {
-    "revision": "dfcc37999e2e1923c373",
-    "url": "/hi-bro-bar/static/css/main.52729d0a.chunk.css"
+    "revision": "a1ad865c38582677d91b",
+    "url": "/hi-bro-bar/static/js/main.a1ad865c.chunk.js"
   },
   {
-    "revision": "3f759796d3d16b8434841d61cd2c007a",
-    "url": "/hi-bro-bar/static/media/fa-solid-900.3f759796.svg"
+    "revision": "3f0f9de6ae60e861b587",
+    "url": "/hi-bro-bar/static/css/1.6ddaa4f8.chunk.css"
   },
   {
-    "revision": "16e0ce3c8a2d10fa05df",
-    "url": "/hi-bro-bar/static/js/1.16e0ce3c.chunk.js"
+    "revision": "3f0f9de6ae60e861b587",
+    "url": "/hi-bro-bar/static/js/1.3f0f9de6.chunk.js"
   },
   {
     "revision": "1dbba8adfbf7e01a0d49",
@@ -56,26 +56,6 @@ self.__precacheManifest = [
     "url": "/hi-bro-bar/static/media/image3.1cd576d3.jpg"
   },
   {
-    "revision": "a31c967484b343189fc58bce914ed245",
-    "url": "/hi-bro-bar/static/media/fa-brands-400.a31c9674.eot"
-  },
-  {
-    "revision": "dfcc37999e2e1923c373",
-    "url": "/hi-bro-bar/static/js/main.dfcc3799.chunk.js"
-  },
-  {
-    "revision": "e4a6cecbe2bb89b0722b5dc85090af7c",
-    "url": "/hi-bro-bar/static/media/fa-brands-400.e4a6cecb.woff2"
-  },
-  {
-    "revision": "c38ef825039cbe8ec76d4f13854f767e",
-    "url": "/hi-bro-bar/static/media/fa-regular-400.c38ef825.eot"
-  },
-  {
-    "revision": "dec02372212aab5a2e5294f1a11756ed",
-    "url": "/hi-bro-bar/static/media/fa-brands-400.dec02372.ttf"
-  },
-  {
     "revision": "dd25437adf06f377113f5df3507423b2",
     "url": "/hi-bro-bar/static/media/fa-regular-400.dd25437a.woff2"
   },
@@ -84,24 +64,44 @@ self.__precacheManifest = [
     "url": "/hi-bro-bar/static/media/fa-regular-400.52899632.woff"
   },
   {
+    "revision": "c38ef825039cbe8ec76d4f13854f767e",
+    "url": "/hi-bro-bar/static/media/fa-regular-400.c38ef825.eot"
+  },
+  {
     "revision": "0e2e26fb3527ae47f9eb1c217592b706",
     "url": "/hi-bro-bar/static/media/fa-regular-400.0e2e26fb.ttf"
   },
   {
-    "revision": "b5a61b229c9c92a6ac21f5b0e3c6e9f1",
-    "url": "/hi-bro-bar/static/media/fa-regular-400.b5a61b22.svg"
+    "revision": "e4a6cecbe2bb89b0722b5dc85090af7c",
+    "url": "/hi-bro-bar/static/media/fa-brands-400.e4a6cecb.woff2"
   },
   {
     "revision": "fd531d212b567d6049f400165473589f",
     "url": "/hi-bro-bar/static/media/fa-solid-900.fd531d21.woff2"
   },
   {
-    "revision": "baa1e2496e8c71f636587c32f4016ca4",
-    "url": "/hi-bro-bar/static/media/fa-solid-900.baa1e249.eot"
+    "revision": "eef6051639f95300dbf0293ad216c6b0",
+    "url": "/hi-bro-bar/static/media/fa-brands-400.eef60516.woff"
   },
   {
     "revision": "09bc9e8c7d6dfdace635ea073974db13",
     "url": "/hi-bro-bar/static/media/fa-solid-900.09bc9e8c.woff"
+  },
+  {
+    "revision": "dec02372212aab5a2e5294f1a11756ed",
+    "url": "/hi-bro-bar/static/media/fa-brands-400.dec02372.ttf"
+  },
+  {
+    "revision": "a31c967484b343189fc58bce914ed245",
+    "url": "/hi-bro-bar/static/media/fa-brands-400.a31c9674.eot"
+  },
+  {
+    "revision": "b5a61b229c9c92a6ac21f5b0e3c6e9f1",
+    "url": "/hi-bro-bar/static/media/fa-regular-400.b5a61b22.svg"
+  },
+  {
+    "revision": "baa1e2496e8c71f636587c32f4016ca4",
+    "url": "/hi-bro-bar/static/media/fa-solid-900.baa1e249.eot"
   },
   {
     "revision": "e143b57de78138e6d5963908afa7e393",
@@ -112,11 +112,11 @@ self.__precacheManifest = [
     "url": "/hi-bro-bar/static/media/fa-brands-400.3f4d4ad4.svg"
   },
   {
-    "revision": "16e0ce3c8a2d10fa05df",
-    "url": "/hi-bro-bar/static/css/1.a340e127.chunk.css"
+    "revision": "3f759796d3d16b8434841d61cd2c007a",
+    "url": "/hi-bro-bar/static/media/fa-solid-900.3f759796.svg"
   },
   {
-    "revision": "81ad649e3476fda0dafcf2b38865cfc5",
+    "revision": "9362ea3d0f319b18673487fe277fe5e0",
     "url": "/hi-bro-bar/index.html"
   }
 ];
