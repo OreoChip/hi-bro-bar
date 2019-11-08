@@ -156,6 +156,9 @@ const careerStyles = {
   careersHeading: {
     fontWeight: 'bold'
   },
+  marginTop50: {
+    marginTop: 50
+  },
   careersText: {
     marginBottom: 20
   },
