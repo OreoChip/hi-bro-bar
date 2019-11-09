@@ -7,16 +7,6 @@ import classNames from 'classnames';
 
 const locationsAndTimings = [
   {
-    title: 'Timings',
-    timing: (
-      <div>
-        10:00 AM – 8:00 PM (Mon-Sat)
-        <br /> 10:00 AM – 6:00 PM (Sunday)
-      </div>
-    ),
-    classes: 'col-lg-12 d-lg-none'
-  },
-  {
     title: 'Falls Church',
     address: (
       <div>
