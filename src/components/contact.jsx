@@ -55,7 +55,7 @@ const locationsAndTimings = [
     classes: 'col-lg-4 col-xs-12'
   },
   {
-    title: 'Falls Church',
+    title: 'Seven Corners/ Willston II',
     address: (
       <div>
         6134-E, Arlington Blvd
