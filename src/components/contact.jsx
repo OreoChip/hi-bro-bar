@@ -60,9 +60,9 @@ const locationsAndTimings = [
       <div>
         6134-E, Arlington Blvd
         <br />
-        Falls Church, VA 22041
+        Falls Church, VA 22044
         <br />
-        <span style={{ color: 'rgb(232, 108, 108)' }}>Coming Soon!</span>
+        <span style={{ color: '#ff2c2c' }}>Coming Soon!</span>
         <br />
         &nbsp;
       </div>
@@ -100,11 +100,19 @@ export default class contact extends Component {
         </div>
         <div style={{ color: '#2d2d2d', textAlign: 'center' }}>
           <div className={classes.careerDesc}>
-            Proudly Serving <span style={locationsBold}>Falls Church</span> and{' '}
+            Proudly Serving <span style={locationsBold}>Falls Church</span>,{' '}
+            <span style={locationsBold}>Seven Corners</span> and{' '}
             <span style={locationsBold}>Alexandria</span> locations, 7 days a
             week!
             <br />
-            <div className={classNames(classes.careersHeading, classes.marginTop50)}>Timings</div>
+            <div
+              className={classNames(
+                classes.careersHeading,
+                classes.marginTop50
+              )}
+            >
+              Timings
+            </div>
             <div>
               10:00 AM – 8:00 PM (Mon-Sat)
               <br /> 10:00 AM – 6:00 PM (Sunday)
