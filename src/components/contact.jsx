@@ -7,16 +7,6 @@ import classNames from 'classnames';
 
 const locationsAndTimings = [
   {
-    title: 'Timings',
-    timing: (
-      <div>
-        10:00 AM – 8:00 PM (Mon-Sat)
-        <br /> 10:00 AM – 6:00 PM (Sunday)
-      </div>
-    ),
-    classes: 'col-lg-12 d-lg-none'
-  },
-  {
     title: 'Falls Church',
     address: (
       <div>
@@ -41,16 +31,6 @@ const locationsAndTimings = [
     classes: 'col-lg-4 col-xs-12'
   },
   {
-    title: 'Timings',
-    timing: (
-      <div>
-        10:00 AM – 8:00 PM (Mon-Sat)
-        <br /> 10:00 AM – 6:00 PM (Sunday)
-      </div>
-    ),
-    classes: 'col-lg-4 col-xs-12 d-none d-lg-block'
-  },
-  {
     title: 'Alexandria',
     address: (
       <div>
@@ -66,6 +46,30 @@ const locationsAndTimings = [
     iframe: (
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.139142481263!2d-77.1340592845694!3d38.806364979584735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b24f28154e2f%3A0x24a52602a720f3b1!2s510+S+Van+Dorn+St%2C+Alexandria%2C+VA+22304%2C+USA!5e0!3m2!1sen!2sin!4v1540838749798"
+        title={'alexandria'}
+        frameBorder="0"
+        style={{ border: 0, width: '100%', height: '100%' }}
+        allowFullScreen
+      />
+    ),
+    classes: 'col-lg-4 col-xs-12'
+  },
+  {
+    title: 'Seven Corners/ Willston II',
+    address: (
+      <div>
+        6134-E, Arlington Blvd
+        <br />
+        Falls Church, VA 22044
+        <br />
+        <span style={{ color: '#ff2c2c' }}>COMING SOON!</span>
+        <br />
+        &nbsp;
+      </div>
+    ),
+    iframe: (
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6212.941935256778!2d-77.1468888479885!3d38.86746523156118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b462e1dc451b%3A0x800b498be46781b4!2s6134%20Arlington%20Blvd%2C%20Seven%20Corners%2C%20VA%2022044!5e0!3m2!1sen!2sus!4v1573234267960!5m2!1sen!2sus"
         title={'alexandria'}
         frameBorder="0"
         style={{ border: 0, width: '100%', height: '100%' }}
@@ -96,9 +100,23 @@ export default class contact extends Component {
         </div>
         <div style={{ color: '#2d2d2d', textAlign: 'center' }}>
           <div className={classes.careerDesc}>
-            Proudly Serving <span style={locationsBold}>Falls Church</span> and{' '}
+            Proudly Serving <span style={locationsBold}>Falls Church</span>,{' '}
+            <span style={locationsBold}>Seven Corners</span> and{' '}
             <span style={locationsBold}>Alexandria</span> locations, 7 days a
             week!
+            <br />
+            <div
+              className={classNames(
+                classes.careersHeading,
+                classes.marginTop50
+              )}
+            >
+              Timings
+            </div>
+            <div>
+              10:00 AM – 8:00 PM (Mon-Sat)
+              <br /> 10:00 AM – 6:00 PM (Sunday)
+            </div>
           </div>
           <div
             className={classNames(

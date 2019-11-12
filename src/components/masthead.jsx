@@ -37,7 +37,7 @@ const options = [
   {
     imgSrc: LocationIcon,
     heading: 'Locations',
-    text: 'Falls Church and Alexandria',
+    text: 'Falls Church, Seven Corners and Alexandria',
     color: '#8e8ef3',
     textStyle: { fontSize: '0.88rem' },
     onClick: () => PubSub.publish('scrollTo', 'contact')

@@ -24,21 +24,14 @@ export const locationsBold = { fontWeight: 900, fontStyle: 'italic' };
 
 export default class Landing extends Component {
   overlayText = (
-    <div
-      className={classNames(
-        this.props.classes.headingText
-      )}
-    >
+    <div className={classNames(this.props.classes.headingText)}>
       <div className={this.props.classes.welcomeHeading}>
         Welcome to Hi Brow Bar
       </div>
-      <div
-        className={classNames(
-          this.props.classes.welcomeText
-        )}
-      >
+      <div className={classNames(this.props.classes.welcomeText)}>
         <div style={{ marginBottom: 10 }}>
-          Hi Brow Bar of <span style={locationsBold}>Falls Church</span> and{' '}
+          Hi Brow Bar of <span style={locationsBold}>Falls Church</span>,{' '}
+          <span style={locationsBold}>Seven Corners</span> and{' '}
           <span style={locationsBold}>Alexandria</span>, offers the best
           services at reasonable prices for your eyebrow threading, facial,
           waxing, beauty treatments, and other needs.
