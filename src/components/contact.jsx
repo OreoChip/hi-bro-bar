@@ -62,7 +62,7 @@ const locationsAndTimings = [
         <br />
         Falls Church, VA 22044
         <br />
-        <span style={{ color: '#ff2c2c' }}>Coming Soon!</span>
+        <span style={{ color: '#ff2c2c' }}>COMING SOON!</span>
         <br />
         &nbsp;
       </div>
