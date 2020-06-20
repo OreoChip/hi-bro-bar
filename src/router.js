@@ -25,7 +25,7 @@ class RouterContainer extends Component {
                 url:
                   'https://www.yelp.com/biz/hi-brow-bar-eye-brow-threading-salon-falls-church'
               },
-              { icon: 'fas fa-at', url: 'mailto:raj.bhanot1@yahoo.com' }
+              { icon: 'fas fa-at', url: 'mailto:info@hibrowthreading.com' }
             ]}
             rightText={"© 2018 Hi Brow Bar"}
             rightLink={{text: "Coresoft USA", url: "http://coresoftsolutions.com"}}
