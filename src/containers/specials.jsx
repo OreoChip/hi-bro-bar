@@ -67,10 +67,10 @@ export default class Specials extends React.Component {
     if (this.validateForm()) {
       emailjs
         .send(
-          process.env.REACT_APP_EMAILJS_SERVICE_NAME,
-          process.env.REACT_APP_EMAILJS_TEMPLATEID,
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
           { from_name: this.state.name, email: this.state.email },
-          process.env.REACT_APP_EMAILJS_USERID
+          process.env.REACT_APP_EMAILJS_USER_ID
         )
         .then(
           response => {
