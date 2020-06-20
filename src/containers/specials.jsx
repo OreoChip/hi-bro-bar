@@ -69,7 +69,8 @@ export default class Specials extends React.Component {
         .send(
           process.env.REACT_APP_EMAILJS_SERVICE_NAME,
           process.env.REACT_APP_EMAILJS_TEMPLATEID,
-          { from_name: this.state.name, email: this.state.email }
+          { from_name: this.state.name, email: this.state.email },
+          process.env.REACT_APP_EMAILJS_USERID
         )
         .then(
           response => {
