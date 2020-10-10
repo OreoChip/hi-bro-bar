@@ -34,7 +34,7 @@ const cards = [
     heading: 'Wax',
     options: [
       { text: 'Under Arm', price: 10 },
-      { text: 'Arm & Under Arm', price: 25 },
+      { text: 'Arm & Under Arm', price: 35 },
       { text: 'Half Arm', price: 20 },
       { text: 'Half Leg', price: 30 },
       { text: 'Full Leg', price: 40 },
