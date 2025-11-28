@@ -43,7 +43,7 @@ const options = [
     onClick: () => PubSub.publish('scrollTo', 'contact')
   },
   {
-    textSrc: '$10',
+    textSrc: '$11',
     text: 'Eyebrow threading – everyday!',
     color: '#e86c6c',
     textStyle: { fontWeight: 900, fontSize: '120%' },
@@ -89,7 +89,7 @@ export default class masthead extends Component {
         <Card
           className={classNames(classes.card)}
           key={`card-${i}`}
-          onClick={option.onClick || (() => {})}
+          onClick={option.onClick || (() => { })}
           style={option.cardStyle || {}}
         >
           <CardActionArea>

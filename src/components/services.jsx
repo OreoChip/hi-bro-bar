@@ -20,12 +20,12 @@ const cards = [
     heading: 'Threading',
     options: [
       { text: 'Eye Brow Threading', price: 10 },
-      { text: 'Upper Lip', price: 6 },
+      { text: 'Upper Lip', price: 12 },
       { text: 'Lower Lip', price: 2 },
       { text: 'Forehead', price: 6 },
       { text: 'Chin', price: 8 },
       { text: 'Side Bum', price: 12 },
-      { text: 'Full Face', price: 30 },
+      { text: 'Full Face', price: 36 },
       { text: 'with neck (extra)', price: 6, extra: true }
     ]
   },
@@ -33,15 +33,24 @@ const cards = [
     img: wax,
     heading: 'Wax',
     options: [
-      { text: 'Under Arm', price: 10 },
-      { text: 'Arm & Under Arm', price: 35 },
-      { text: 'Half Arm', price: 20 },
-      { text: 'Half Leg', price: 30 },
-      { text: 'Full Leg', price: 40 },
-      { text: 'Full Leg & Arm', price: 75 },
-      { text: 'Full Brazilian', price: 45 },
-      { text: 'Bikini Line', price: 25 },
-      { text: 'Full Body', price: 160 }
+      { text: 'Under Arm', price: 15 },
+      { text: 'Arm & Under Arm', price: 50 },
+      { text: 'Half Arm', price: 30 },
+      { text: 'Full Arm', price: 40 },
+      { text: 'Half Stomach', price: 30 },
+      { text: 'Full Stomach (with Chest)', price: 45 },
+      { text: 'Full Back', price: 40 },
+      { text: 'Half Leg', price: 35 },
+      { text: 'Full Leg', price: 50 },
+      { text: 'Full Leg & Arm (with Under Arm)', price: 100 },
+      { text: 'Full Brazilian', price: 55 },
+      { text: 'Bikini Line', price: 35 },
+      { text: 'Full Body (without Bikini)', price: 160 },
+      { text: 'Full Face', price: 42 },
+      { text: 'Lip', price: 8 },
+      { text: 'Chin', price: 10 },
+      { text: 'Nose In and Out', price: 15 },
+      { text: 'Nostrils', price: 10 }
     ]
   },
   {
