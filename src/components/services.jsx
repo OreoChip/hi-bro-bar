@@ -19,8 +19,8 @@ const cards = [
     img: threading,
     heading: 'Threading',
     options: [
-      { text: 'Eye Brow Threading', price: 10 },
-      { text: 'Upper Lip', price: 12 },
+      { text: 'Eye Brow Threading', price: 12 },
+      { text: 'Upper Lip', price: 6 },
       { text: 'Lower Lip', price: 2 },
       { text: 'Forehead', price: 6 },
       { text: 'Chin', price: 8 },
@@ -59,8 +59,10 @@ const cards = [
       {
         heading: 'Facials',
         options: [
-          { text: 'Herbal Facial', price: 45 },
-          { text: 'Gold Facial', price: 65 }
+          { text: 'Mini Facial', price: 45 },
+          { text: 'Herbal Facial', price: 65 },
+          { text: 'Gold Facial', price: 65 },
+          { text: 'Whitening Facial', price: 85 }
         ]
       },
       {

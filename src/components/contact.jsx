@@ -135,10 +135,7 @@ export default class contact extends Component {
                 )}
               >
                 <div className={classes.careersHeading}>
-                  {location.title}{" "}
-                  {location.title === "Seven Corners/ Willston II" ? (
-                    <span style={{ color: "#ff2c2c", fontFamily: "arial" }}>(NOW OPEN!)</span>
-                  ) : null}
+                  {location.title}
                 </div>
                 <div className={classes.careersText}>
                   {location.address ? location.address : location.timing}
